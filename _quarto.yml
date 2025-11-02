@@ -25,10 +25,6 @@ website:
           text: Support
         - href: https://github.com/chefs-kiss/ML_J2026/discussions
           text: Forum
-    - section: "Tips and Tricks"
-      contents:
-        - href: course_information/github_tricks.qmd
-          text: Using Github
     - section: "Homework"
       contents:
         - href: homework/hw1.qmd
