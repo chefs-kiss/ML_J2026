@@ -46,7 +46,7 @@
     "href": "slides/00-intro-ml.html#course-website",
     "title": "Welcome to ML!",
     "section": "Course website",
-    "text": "Course website\n\nvizdata.org\n\n\naka “the one link to rule them all”"
+    "text": "Course website\n\nML_J2026\n\n\naka “the one link to rule them all”"
   },
   {
     "objectID": "slides/00-intro-ml.html#lectures",
@@ -88,7 +88,7 @@
     "href": "course_information/schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "week\ndow\ndate\nsession\nprepare\ntopic\nmaterials (due @ 11:59pm)\n\n\n\n\n1\nM\nJan 5\nZ\nread the syllabus\nIntroduction Intro to ML + Using GitHub\nintro to ml github websites 💻Lab0\n\n\n\nT\nJan 6\nA\n📚 ggplot2-book - grammar 📚 socviz\nEDA exploratory data analysis + graphs\nEDA1 ✏️HW1 ☑️PC1\n\n\n\nW\nJan 7\nB\n\nEDA statistics📄 Standard EDA\nEDA2 💻 Lab1",
+    "text": "week\ndow\ndate\nsession\nprepare\ntopic\nmaterials\n\n\n\n\n1\nM\nJan 5\nZ\nread the syllabus\nIntro to ML  Using GitHub\n👩🏻‍🏫intro to ml  👩🏻‍🏫github websites  💻Lab0\n\n\n\nT\nJan 6\nA\n📚 gg-book - grammar  📚 socviz\nEDA: graphs\n👩🏻‍🏫EDA1  📝HW1  ☑️PC1\n\n\n\nW\nJan 7\nB\n📚 standard-EDA\nEDA: statistics  📄 Standard EDA\n👩🏻‍🏫EDA2  💻 Lab1",
     "crumbs": [
       "Course Information",
       "Schedule"
