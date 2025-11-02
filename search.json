@@ -12,9 +12,19 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Course Title",
+    "title": "Machine Learning",
     "section": "",
-    "text": "Course info & details here",
+    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#course-overview",
+    "href": "index.html#course-overview",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.\nYou can find the course syllabus here and the course schedule here.",
     "crumbs": [
       "Home"
     ]
