@@ -15,14 +15,34 @@ website:
         text: GitHub
     style: docked
     contents:
-      - href: index.qmd
-        text: Home
-      - href: schedule.qmd
-        text: Schedule
-      - href: materials.qmd
-        text: Materials
-      - href: https://github.com/chefs-kiss/ML_J2026/discussions
-        text: Forum
+    - section: "Course Information"
+      contents:
+        - href: index.qmd
+          text: Home
+        - href: schedule.qmd
+          text: Schedule
+        - href: support.qmd
+          text: Support
+        - href: https://github.com/chefs-kiss/ML_J2026/discussions
+          text: Forum
+    - section: "Tips and Tricks"
+      contents:
+        - href: course_information/github_tricks.qmd
+          text: Using Github
+    - section: "Homework"
+      contents:
+        - href: homework/HW1.qmd
+          text: HW1
+    - section: "Labs"
+      contents:
+        - href: labs/lab1.qmd
+          text: Lab1
+    - section: "Semester Project"
+      contents:
+        - href: project/project_overview.qmd
+          text: Overview
+        - href: project/PC1.qmd
+          text: PC1
 
 format:
   html:
