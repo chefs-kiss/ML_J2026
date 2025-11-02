@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 0 – Machine Learning</title>
+<title>lab0 – Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,10 +20,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -67,6 +102,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -80,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab0.html">Lab0</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -142,55 +180,27 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../homework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Homework</span></a>
+ <span class="menu-text">Semester Project</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework/hw1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HW1</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../labs/lab0.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab0</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../labs/lab1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab1</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Semester Project</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../project/project_overview.html" class="sidebar-item-text sidebar-link">
@@ -210,36 +220,675 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#task1-understanding-the-data" id="toc-task1-understanding-the-data" class="nav-link active" data-scroll-target="#task1-understanding-the-data">Task1: Understanding the data</a></li>
+  <li><a href="#task2-reading-data-into-a-dict" id="toc-task2-reading-data-into-a-dict" class="nav-link" data-scroll-target="#task2-reading-data-into-a-dict">Task2: Reading data into a dict</a></li>
+  <li><a href="#task3-using-the-database" id="toc-task3-using-the-database" class="nav-link" data-scroll-target="#task3-using-the-database">Task3: Using the database</a></li>
+  <li><a href="#task4-summarizing-our-data" id="toc-task4-summarizing-our-data" class="nav-link" data-scroll-target="#task4-summarizing-our-data">Task4: Summarizing our data</a></li>
+  <li><a href="#task5-comparing-summarizations" id="toc-task5-comparing-summarizations" class="nav-link" data-scroll-target="#task5-comparing-summarizations">Task5: Comparing Summarizations</a></li>
+  <li><a href="#task6-trends-over-time" id="toc-task6-trends-over-time" class="nav-link" data-scroll-target="#task6-trends-over-time">Task6: Trends over time</a></li>
+  <li><a href="#task7-more-stories-to-be-told" id="toc-task7-more-stories-to-be-told" class="nav-link" data-scroll-target="#task7-more-stories-to-be-told">Task7: More stories to be told</a></li>
+  <li><a href="#task8-reflection" id="toc-task8-reflection" class="nav-link" data-scroll-target="#task8-reflection">Task8: Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab0.html">Lab0</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Lab 0</h1>
-<p class="subtitle lead">Uncovering Policing Habits with Dictionaries</p>
+
+
+
+<p><a href="https://colab.research.google.com/github/chefs-kiss/ML_J2026/blob/main/PA0_Policing.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p>Group Members:</p>
+<section id="task1-understanding-the-data" class="level1">
+<h1>Task1: Understanding the data</h1>
+<ol type="1">
+<li>Follow the link https://github.com/washingtonpost/data-police-shootings to read about the data. Write a three sentence summary of what is included in this data, and where it comes from. This dataset allows only a small number of categories for race, and the dataset fails to recognize that some people are multiracial. This is a weakness of the dataset. Include at least one other observation that may be a weakness of the data</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Written Answer</b><br></p>
+</div>
+<ol start="2" type="1">
+<li>You can view csv by running the code chunk below.</li>
+</ol>
+<div id="cell-6" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;colab&quot;,&quot;value&quot;:{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:591}}" data-outputid="19091577-83c8-4cfb-dadc-bf7fffe8639b">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>fatal_police_shootings_data <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/washingtonpost/data-police-shootings/refs/heads/master/v2/fatal-police-shootings-data.csv'</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fatal_police_shootings_data.head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div id="df-66ae6365-c361-4432-ace0-f6ff6bb9fc76" class="colab-df-container">
+    <div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">id</th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">threat_type</th>
+<th data-quarto-table-cell-role="th">flee_status</th>
+<th data-quarto-table-cell-role="th">armed_with</th>
+<th data-quarto-table-cell-role="th">city</th>
+<th data-quarto-table-cell-role="th">county</th>
+<th data-quarto-table-cell-role="th">state</th>
+<th data-quarto-table-cell-role="th">latitude</th>
+<th data-quarto-table-cell-role="th">longitude</th>
+<th data-quarto-table-cell-role="th">location_precision</th>
+<th data-quarto-table-cell-role="th">name</th>
+<th data-quarto-table-cell-role="th">age</th>
+<th data-quarto-table-cell-role="th">gender</th>
+<th data-quarto-table-cell-role="th">race</th>
+<th data-quarto-table-cell-role="th">race_source</th>
+<th data-quarto-table-cell-role="th">was_mental_illness_related</th>
+<th data-quarto-table-cell-role="th">body_camera</th>
+<th data-quarto-table-cell-role="th">agency_ids</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>3</td>
+<td>2015-01-02</td>
+<td>point</td>
+<td>not</td>
+<td>gun</td>
+<td>Shelton</td>
+<td>Mason</td>
+<td>WA</td>
+<td>47.246826</td>
+<td>-123.121592</td>
+<td>not_available</td>
+<td>Tim Elliot</td>
+<td>53.0</td>
+<td>male</td>
+<td>A</td>
+<td>not_available</td>
+<td>True</td>
+<td>False</td>
+<td>73</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>4</td>
+<td>2015-01-02</td>
+<td>point</td>
+<td>not</td>
+<td>gun</td>
+<td>Aloha</td>
+<td>Washington</td>
+<td>OR</td>
+<td>45.487421</td>
+<td>-122.891696</td>
+<td>not_available</td>
+<td>Lewis Lee Lembke</td>
+<td>47.0</td>
+<td>male</td>
+<td>W</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>70</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>5</td>
+<td>2015-01-03</td>
+<td>move</td>
+<td>not</td>
+<td>unarmed</td>
+<td>Wichita</td>
+<td>Sedgwick</td>
+<td>KS</td>
+<td>37.694766</td>
+<td>-97.280554</td>
+<td>not_available</td>
+<td>John Paul Quintero</td>
+<td>23.0</td>
+<td>male</td>
+<td>H</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>238</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>8</td>
+<td>2015-01-04</td>
+<td>point</td>
+<td>not</td>
+<td>replica</td>
+<td>San Francisco</td>
+<td>San Francisco</td>
+<td>CA</td>
+<td>37.762910</td>
+<td>-122.422001</td>
+<td>not_available</td>
+<td>Matthew Hoffman</td>
+<td>32.0</td>
+<td>male</td>
+<td>W</td>
+<td>not_available</td>
+<td>True</td>
+<td>False</td>
+<td>196</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>9</td>
+<td>2015-01-04</td>
+<td>point</td>
+<td>not</td>
+<td>other</td>
+<td>Evans</td>
+<td>Weld</td>
+<td>CO</td>
+<td>40.383937</td>
+<td>-104.692261</td>
+<td>not_available</td>
+<td>Michael Rodriguez</td>
+<td>39.0</td>
+<td>male</td>
+<td>H</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>473</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>11</td>
+<td>2015-01-04</td>
+<td>attack</td>
+<td>not</td>
+<td>gun</td>
+<td>Guthrie</td>
+<td>Logan</td>
+<td>OK</td>
+<td>35.876991</td>
+<td>-97.423454</td>
+<td>not_available</td>
+<td>Kenneth Joe Brown</td>
+<td>18.0</td>
+<td>male</td>
+<td>W</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>101</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>13</td>
+<td>2015-01-05</td>
+<td>shoot</td>
+<td>car</td>
+<td>gun</td>
+<td>Chandler</td>
+<td>Maricopa</td>
+<td>AZ</td>
+<td>33.327887</td>
+<td>-111.840959</td>
+<td>not_available</td>
+<td>Kenneth Arnold Buck</td>
+<td>22.0</td>
+<td>male</td>
+<td>H</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>195</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>15</td>
+<td>2015-01-06</td>
+<td>point</td>
+<td>not</td>
+<td>gun</td>
+<td>Assaria</td>
+<td>Saline</td>
+<td>KS</td>
+<td>38.703755</td>
+<td>-97.563904</td>
+<td>not_available</td>
+<td>Brock Nichols</td>
+<td>35.0</td>
+<td>male</td>
+<td>W</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>490</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>16</td>
+<td>2015-01-06</td>
+<td>accident</td>
+<td>not</td>
+<td>unarmed</td>
+<td>Burlington</td>
+<td>Des Moines</td>
+<td>IA</td>
+<td>40.809250</td>
+<td>-91.118875</td>
+<td>not_available</td>
+<td>Autumn Steele</td>
+<td>34.0</td>
+<td>female</td>
+<td>W</td>
+<td>not_available</td>
+<td>False</td>
+<td>True</td>
+<td>287</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>17</td>
+<td>2015-01-06</td>
+<td>point</td>
+<td>not</td>
+<td>replica</td>
+<td>Knoxville</td>
+<td>Allegheny</td>
+<td>PA</td>
+<td>40.412936</td>
+<td>-79.991408</td>
+<td>not_available</td>
+<td>Leslie Sapp III</td>
+<td>47.0</td>
+<td>male</td>
+<td>B</td>
+<td>not_available</td>
+<td>False</td>
+<td>False</td>
+<td>26254</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-66ae6365-c361-4432-ace0-f6ff6bb9fc76')" title="Convert this dataframe to an interactive table." style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-66ae6365-c361-4432-ace0-f6ff6bb9fc76 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-66ae6365-c361-4432-ace0-f6ff6bb9fc76');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-f2660343-e562-4801-85c1-df8683343227">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f2660343-e562-4801-85c1-df8683343227')" title="Suggest charts" style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-f2660343-e562-4801-85c1-df8683343227 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+
+    </div>
+  </div>
+</div>
+</div>
+<ol type="a">
+<li>List out some of the columns that are contained in this csv.
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Written Answer</b><br></p>
+</div></li>
+<li>For each of those columns, give some examples for the data in that column, and what they mean. For example, some examples of values in the first column <code>id</code> are 22, 325, and 140.
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Written Answer</b><br></p>
+</div></li>
+<li>In order to compare the representation of black people among the subjects of fatal police shootings to their representation in the general population, we need to know the percent of the United States population which is black. You can find this by googling ’racial demographics of the United States‘. Include a citation with the organization and url.
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Written Answer</b><br></p>
+</div></li>
+</ol>
+</section>
+<section id="task2-reading-data-into-a-dict" class="level1">
+<h1>Task2: Reading data into a dict</h1>
+<p>Run the code chunk below. This will select some of the features from the dataset, and put it into a Python dictionary.</p>
+<div id="cell-9" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>policing <span class="op">=</span> fatal_police_shootings_data[[<span class="st">'id'</span>, <span class="st">'name'</span>, <span class="st">'date'</span>, <span class="st">'armed_with'</span>, <span class="st">'age'</span>, <span class="st">'gender'</span>, <span class="st">'race'</span>, <span class="st">'state'</span>]]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>policing_dict <span class="op">=</span> policing.set_index(<span class="st">'id'</span>).to_dict(orient<span class="op">=</span><span class="st">'index'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ol start="3" type="1">
+<li>What information from the original csv is stored in <code>policing_dict</code>? What information from the original csv do we use as the keys in <code>policing_dict</code>? What is the type of the values in <code>policing_dict</code>? Hint: use <code>type(dict[key])</code>.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br> Hint: create a code chunk with <code>type(dict[key])</code> to find the data type of the values in our dictionary</p>
+</div>
+</section>
+<section id="task3-using-the-database" class="level1">
+<h1>Task3: Using the database</h1>
+<ol start="4" type="1">
+<li><strong>Finding a particular record</strong>: Find the record of the fatal police shooting with ID number <code>1694</code>. If you’ve followed current events in the past few years, there should be a familiar name here.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br> Add <code>policing_dict[1694]</code> to a code chunk</p>
+</div>
+<ol start="5" type="1">
+<li><strong>Displaying data from a single record</strong>: Print the <code>name</code> and <code>state</code> of the individual with ID number <code>1694</code>.
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div></li>
+<li><strong>Displaying data from multiple records</strong>: The following code will display the entire dictionary using a for loop:</li>
+</ol>
+<pre><code>for person,data in policing dict.items():
+print(policing dict[person])</code></pre>
+Add an <code>if</code> statement to the <code>for</code> loop to filter out only individuals from Minnesota. This means you’ll need to check the <code>state</code> for each person and only print data if the <code>state</code> is Minnesota.
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+</section>
+<section id="task4-summarizing-our-data" class="level1">
+<h1>Task4: Summarizing our data</h1>
+<ol start="7" type="1">
+<li><strong>Creating a new dictionary as a subset</strong>: Instead of displaying all the information, let’s create a new dictionary that only contains inviduals from Minnesota. The syntax for this is: <code>key:values for key, values in dict.items() if condition</code> where <code>condition</code> is what you’re filtering on and <code>dict</code> is your dictionary. Name this new dictionary <code>MN_selection</code>.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+<ol start="8" type="1">
+<li><strong>Creating summarization functions</strong>: We’d like to create a function that takes in our database dictionary and returns a dictionary with counts of occurrences of each race among subjects of fatal police shootings. The keys in this dictionary should be races, and the corresponding values should be the number of subjects of that race.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br> The starter code for this function is below:</p>
+</div>
+<div id="cell-19" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_race_counts(database:<span class="bu">dict</span>)<span class="op">-&gt;</span><span class="bu">dict</span>:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  race_counts <span class="op">=</span> {}</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> person, data <span class="kw">in</span> database.items():</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">#add logic to populate race counts</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> race_counts</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ol start="9" type="1">
+<li><strong>Using a summarization function</strong>: Print the fraction of fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of fatal police shootings with a black subject, by the total number of fatal police shootings.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br> Note: using <code>get</code>, <code>len</code>, and <code>round</code> may be helpful.</p>
+</div>
+<ol start="10" type="1">
+<li>How does the proportion of black subjects in fatal police shootings compare to the proportion of black people in the United States population?</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+</section>
+<section id="task5-comparing-summarizations" class="level1">
+<h1>Task5: Comparing Summarizations</h1>
+<ol start="11" type="1">
+<li>Create a new dictionary called <code>unarmed_selection</code>, which is built using dictionary comprehension on the original dictionary <code>policing_dict</code>. This dictionary should have the same structure as policing dict, except it will only contain entries for fatal police shootings where the subject was <code>unarmed</code>.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+<ol start="12" type="1">
+<li>Create a new dictionary, called unarmed race counts, which is created using the <code>get_race_counts</code> function on the dictionary <code>unarmed_selection</code>. The purpose of this dictionary will be to count the number of occurrences of each race among subjects of fatal police shootings, including only those where the subject is unarmed.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+<ol start="13" type="1">
+<li>Print the fraction of unarmed fatal police shootings with a black subject. This should be a number between 0 and 1, and can be computed by dividing the number of unarmed fatal police shootings with a black subject (you can get this from the dictionary unarmed race counts), by the total number of unarmed fatal police shootings.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+<ol start="14" type="1">
+<li>How does the proportion of black subjects in fatal police shootings where the subject is unarmed compare to the proportion of black people in the United States population? How does it compare to the proportion of black subjects in all police shootings?</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+</section>
+<section id="task6-trends-over-time" class="level1">
+<h1>Task6: Trends over time</h1>
+<ol start="15" type="1">
+<li><strong>Creating a list of a single feature</strong>: Let’s now take a look at creating a list with our data. Using the code below, edit it so that only dates are shown (hint: do something to data). Now, get rid of anything that isn’t the year (use some string slicing). Name this list <code>year_col</code>, which contains only the year for each record in our database.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br> Edit <code>[data for person, data in policing dict.items()]</code></p>
+</div>
+<ol start="16" type="1">
+<li><strong>Creating counts from a list</strong>: Summarize the list you just created into a dictionary where each key is a single year and the value is the count of that year in our database. Note: If you do this with dictionary comprehension use the list method <code>count</code> and <code>set(year col)</code>.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+<ol start="17" type="1">
+<li>How do the number of fatal police shootings change over time? Do you notice any patterns or trends?</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+</section>
+<section id="task7-more-stories-to-be-told" class="level1">
+<h1>Task7: More stories to be told</h1>
+<p>Sources: * U.S. Crime and Arrest Data (FBI UCR) * U.S. Demographic Data (Census Bureau) * Police Departments’ Use of Force Data (BJS) * Pew Research on Policing * Other relevant sources (Reddit, social media, etc.)</p>
+<ol start="18" type="1">
+<li>List at least two sources you found informative. Include the organization, url, and brief description of the information the source contains. This source could be an additional dataset, or it could be a result of an analysis done. Our goal is to try to link the insights from the previous tasks to other insights found elsewhere.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+<ol start="19" type="1">
+<li>Come up with at least three questions/insights that could supplement the analysis you have done so far. These questions should address some aspects of the following:</li>
+</ol>
+<ul>
+<li>validation: how can the data from these sources support or challenge the findings you’ve already made about racial disparities in fatal police shootings?</li>
+<li>expansion: how can additional data be used to expand upon the analysis in new areas, or further explore systemic issues related to police shootings?</li>
+<li>comparisons: how do the findings from these sources compare to the conclusion you’ve drawn from other tasks? Are there any contradictions or surprising findings?</li>
+</ul>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
+</div>
+</section>
+<section id="task8-reflection" class="level1">
+<h1>Task8: Reflection</h1>
+<ol start="20" type="1">
+<li>Write a reflection (at least five sentences) on what you learned from this project. This can include your reaction to the results of the project, as well as the process of working with the data.</li>
+</ol>
+<div style="border: 2px solid #a7b7a0ff; background-color:#a7b7a0ff; padding:10px; border-radius:8px;">
+<p><b>Student Answer</b><br></p>
 </div>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Lab Group: You and one other person are to work together to complete this lab assignment.</p>
-<p>Python Notebook: Please download the Python Notebook <strong>lab0_policing.ipynb</strong> <a href="https://github.com/chefs-kiss/ML_J2026/tree/main/labs/notebooks">here</a>. You and your partner can work on a single file, then upload it to <em>both</em> of your websites.</p>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
