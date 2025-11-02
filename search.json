@@ -18,11 +18,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations",
-    "crumbs": [
-      "Course Information",
-      "Schedule"
-    ]
+    "text": "Example schedule:\n\n\n\n\n\n\n\n\n\nMorning\nAfternoon\n\n\n\n\nL\nIntro + Data manipulation\ngit / GitHub\n\n\nM\nGeneralised Linear Models\nData visualisation\n\n\nX\nMixed models / GAM / Bayes\nFunctional programming + Students work\n\n\nJ\nMultivariate analyses\nReproducible workflows\n\n\nV\nUsing R as GIS + Students work\nProject presentations"
   },
   {
     "objectID": "slides/00-intro-ml.html#daily-structure",
@@ -92,7 +88,11 @@
     "href": "course_information/schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "week\ndow\ndate\nsession\nprepare\ntopic\nmaterials (due @ 11:59pm)\n\n\n\n\n1\nM\nJan 5\nZ\nread the syllabus\nIntroduction Intro to ML + Using GitHub\nintro to ml github websites 💻Lab0\n\n\n\nT\nJan 6\nA\n📚 ggplot2-book - grammar 📚 socviz\nEDA exploratory data analysis + graphs\nEDA1 ✏️HW1 ☑️PC1\n\n\n\nW\nJan 7\nB\n\nEDA statistics📄 Standard EDA\nEDA2 💻 Lab1"
+    "text": "week\ndow\ndate\nsession\nprepare\ntopic\nmaterials (due @ 11:59pm)\n\n\n\n\n1\nM\nJan 5\nZ\nread the syllabus\nIntroduction Intro to ML + Using GitHub\nintro to ml github websites 💻Lab0\n\n\n\nT\nJan 6\nA\n📚 ggplot2-book - grammar 📚 socviz\nEDA exploratory data analysis + graphs\nEDA1 ✏️HW1 ☑️PC1\n\n\n\nW\nJan 7\nB\n\nEDA statistics📄 Standard EDA\nEDA2 💻 Lab1",
+    "crumbs": [
+      "Course Information",
+      "Schedule"
+    ]
   },
   {
     "objectID": "index.html",
