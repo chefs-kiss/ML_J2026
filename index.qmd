@@ -1,5 +1,8 @@
 ---
-title: "Course Title"
+title: "Machine Learning"
 ---
 
-Course info & details here
+## Course Overview
+This is the homepage for CSCI 200 - Introduction to Machine Learning taught by Prof. Kim Mandery in January 2026 at St. Olaf College. All course materials will be posted on this site.
+
+You can find the course syllabus here and the course schedule here.
