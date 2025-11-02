@@ -2,12 +2,8 @@
 title: "Schedule"
 ---
 
-Example schedule:
-
-|     |                Morning              |          Afternoon                     |
-|:---:|:-----------------------------------:|:--------------------------------------:|
-|  L  | Intro + Data manipulation           | git / GitHub                           |
-|  M  | Generalised Linear Models           | Data visualisation                     |
-|  X  | Mixed models / GAM / Bayes          | Functional programming + Students work |
-|  J  | Multivariate analyses               | Reproducible workflows                 |
-|  V  | Using R as GIS + Students work      | Project presentations                  |
+| week | dow | date  | session | prepare                                                                                                                              | topic                                           | materials (due @ 11:59pm)                                                                                                   |
+| ---- | --- | ----- | ------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1    | M   | Jan 5 | Z       | read the syllabus                                                                                                                    | Introduction <br><br>Intro to ML + Using GitHub | [intro to ml](/slides/00-intro-ml.html) <br><br>[github websites](/slides/00-github.html) <br><br>💻[Lab0](/labs/lab0.html) |
+|      | T   | Jan 6 | A       | 📚 [ggplot2-book - grammar](https://ggplot2-book.org/mastery.html) <br><br>📚 [socviz](https://socviz.co/lookatdata.html#lookatdata) | EDA <br><br>exploratory data analysis + graphs  | [EDA1](/slides/01-eda.html) <br><br>✏️[HW1](/homework/hw1.html) <br><br>☑️[PC1](/project/pc1.html)                          |
+|      | W   | Jan 7 | B       |                                                                                                                                      | EDA <br><br>statistics<br>📄 Standard EDA       | [EDA2](/slides/02-eda.html) <br><br>💻 [Lab1](/labs/lab1.html)                                                              |
