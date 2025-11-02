@@ -19,9 +19,9 @@ website:
       contents:
         - href: index.qmd
           text: Home
-        - href: schedule.qmd
+        - href: course_information/schedule.qmd
           text: Schedule
-        - href: support.qmd
+        - href: course_information/support.qmd
           text: Support
         - href: https://github.com/chefs-kiss/ML_J2026/discussions
           text: Forum
