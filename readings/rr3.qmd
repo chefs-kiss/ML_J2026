@@ -1,0 +1,9 @@
+# CLS readings
+
+[ISL-P](https://www.statlearning.com/): Unsupervised Learning section 12.1; PCA section 12.2; Clustering Models section 12.3
+
+
+Read the following articles:
+[Decision making with AI](https://www.nature.com/articles/s41599-020-0501-9) (few years old) gives real-world examples of the ethical dilemmas of ML
+
+[Recommender system tutorial] (https://www.alldatascience.com/recommender-systems/simple-recipe-recommender-system-with-scikit-surprise/)(won't cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial.

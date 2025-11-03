@@ -1,0 +1,9 @@
+# EVL readings
+
+[ISL-P](https://www.statlearning.com/): Intro to ML section 2.1; Model Accuracy section 2.2; Cross-validation section 5.1; Bootstrap section 5.2
+
+
+Read the following articles:
+[Accountable algorithms](https://www.fatml.org/resources/principles-for-accountable-algorithms) describes principles for investigating algorithms and holding them accountable.
+
+[Algorithm guidance](https://cdt.org/ai-machine-learning/) expands off of the accountable algorithms article to show some real-world examples. This is a bit long, so skim as needed. Pay attention to the real-world examples.
