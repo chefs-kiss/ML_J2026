@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schedule – Machine Learning</title>
+<title>lab-eda – Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -81,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Course Information</a></li><li class="breadcrumb-item"><a href="../course_information/schedule.html">Schedule</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../course_information/schedule.html" class="sidebar-item-text sidebar-link active">
+  <a href="../course_information/schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -171,238 +170,126 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-1-jan-5---9" id="toc-week-1-jan-5---9" class="nav-link active" data-scroll-target="#week-1-jan-5---9">Week 1 (Jan 5 - 9)</a></li>
-  <li><a href="#week-2-jan-12---16" id="toc-week-2-jan-12---16" class="nav-link" data-scroll-target="#week-2-jan-12---16">Week 2 (Jan 12 - 16)</a></li>
-  <li><a href="#week-3-jan-19---23" id="toc-week-3-jan-19---23" class="nav-link" data-scroll-target="#week-3-jan-19---23">Week 3 (Jan 19 - 23)</a></li>
-  <li><a href="#week-4-jan-26---30" id="toc-week-4-jan-26---30" class="nav-link" data-scroll-target="#week-4-jan-26---30">Week 4 (Jan 26 - 30)</a></li>
+  <li><a href="#part-1-generate-code" id="toc-part-1-generate-code" class="nav-link active" data-scroll-target="#part-1-generate-code">Part 1: Generate Code</a></li>
+  <li><a href="#part-2-outline-analysis" id="toc-part-2-outline-analysis" class="nav-link" data-scroll-target="#part-2-outline-analysis">Part 2: Outline Analysis</a></li>
+  <li><a href="#task-2-critique-the-analysis" id="toc-task-2-critique-the-analysis" class="nav-link" data-scroll-target="#task-2-critique-the-analysis">Task 2: Critique the analysis</a>
+  <ul class="collapse">
+  <li><a href="#part-1-questions-to-consider" id="toc-part-1-questions-to-consider" class="nav-link" data-scroll-target="#part-1-questions-to-consider">Part 1: Questions to consider</a></li>
+  <li><a href="#part-2-improvements" id="toc-part-2-improvements" class="nav-link" data-scroll-target="#part-2-improvements">Part 2: Improvements</a></li>
+  </ul></li>
+  <li><a href="#task-3-implement-improvements" id="toc-task-3-implement-improvements" class="nav-link" data-scroll-target="#task-3-implement-improvements">Task 3: Implement improvements</a>
+  <ul class="collapse">
+  <li><a href="#part-1-updated-prompt" id="toc-part-1-updated-prompt" class="nav-link" data-scroll-target="#part-1-updated-prompt">Part 1: Updated Prompt</a></li>
+  <li><a href="#part-2-updated-code" id="toc-part-2-updated-code" class="nav-link" data-scroll-target="#part-2-updated-code">Part 2: Updated Code</a></li>
+  </ul></li>
+  <li><a href="#task-4-visualizations-that-tell-a-story" id="toc-task-4-visualizations-that-tell-a-story" class="nav-link" data-scroll-target="#task-4-visualizations-that-tell-a-story">Task 4: Visualizations that tell a story</a>
+  <ul class="collapse">
+  <li><a href="#part-1-viz-1" id="toc-part-1-viz-1" class="nav-link" data-scroll-target="#part-1-viz-1">Part 1: Viz 1</a></li>
+  <li><a href="#part-2-viz-2" id="toc-part-2-viz-2" class="nav-link" data-scroll-target="#part-2-viz-2">Part 2: Viz 2</a></li>
+  </ul></li>
+  <li><a href="#task-5-reflection" id="toc-task-5-reflection" class="nav-link" data-scroll-target="#task-5-reflection">Task 5: Reflection</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Course Information</a></li><li class="breadcrumb-item"><a href="../course_information/schedule.html">Schedule</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Schedule</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="week-1-jan-5---9" class="level1">
-<h1>Week 1 (Jan 5 - 9)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 5</td>
-<td style="text-align: left;">📖<a href="../course_information/syllabus.html" class="badge bg-light">syllabus</a></td>
-<td style="text-align: left;">INTRO</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">INTRO</a> 💻 <a href="" class="badge bg-light">Lab: Intro</a> ☑️ <a href="" class="badge bg-light">PC0</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 6</td>
-<td style="text-align: left;">📖<a href="../01-EDA/rr-EDA.qmd.qmd" class="badge bg-light">readings</a></td>
-<td style="text-align: left;">EDA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EDA1</a> <a href="" class="badge bg-light">EDA2</a> 📝 <a href="" class="badge bg-light">HW:EDA</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 7</td>
-<td style="text-align: left;">📓<a href="../01-EDA/std-EDA.qmd0" class="badge bg-light">EDA study guide</a></td>
-<td style="text-align: left;">EDA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EDA3</a> 💻 <a href="" class="badge bg-light">Lab:EDA</a> ☑️ <a href="" class="badge bg-light">PC1</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 8</td>
-<td style="text-align: left;">📖<a href="../02-EVL/rr-EVL.html" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">EDA Quiz</span> <br> EVL</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EVL1</a> <a href="" class="badge bg-light">EVL2</a> 📝 <a href="" class="badge bg-light">HW:EVL</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 9</td>
-<td style="text-align: left;">📓<a href="" class="badge bg-light">EDA study guide</a></td>
-<td style="text-align: left;">EVL</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EVL3</a> 💻 <a href="" class="badge bg-light">Lab:EVL</a> ☑️ <a href="" class="badge bg-light">PC2</a></td>
-</tr>
-</tbody>
-</table>
+<p><a href="https://colab.research.google.com/github/chefs-kiss/ML_J2026/blob/main/PA1_EDA_with_Titanic.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p>Name:</p>
+<p>Who you worked with:</p>
+<p>##Objectives The goals of this project are to: * Understand the process of exploratory data analysis (EDA), statistical tests, and visualizations. * Develop the ability to critique and improve code generated by a language model (like ChatGPT or DeepSeek). * Create two publication-style visualizations that tell a story.</p>
+<p>##Overview This project is designed to reinforce some of the concepts we have learned while exploring data. For Task 1, you are to generate Python code to analyze and summarize the Titanic dataset given a prompt for a genAI model. For Task 2, you will critique the generated program by identifying three areas of improvement. For Task 3, you will implement the improvements you identified. For Task 4, you will create two publication-style visualizations that tell a story. For Task 5, you will reflect on this assignment.</p>
+<p>##Schedule Here is the suggested schedule for working on this project: * By Thursday, 2/13, read through the project instructions. * By Sunday, 2/16, complete Tasks 1-2 of the project, and start Task 3 of the project. * By Tuesday, 2/18, complete Task 3 of the project, and start Task 4. * By Wednesday, 2/19, complete Tasks 4-5 and check your solutions against the rubric (included at the end of these instructions), and submit your files through moodle.</p>
+<p>This project is due on Thursday, 2/20, by 11:59pm.</p>
+<p>#Task 1: Generate an analysis</p>
+<p>Use the following prompt in ChatGPT to generate Python code for analyzing the Titanic dataset:</p>
+<pre><code>Write a Python script using pandas, matplotlib, and seaborn that loads the Titanic dataset using seaborn, performs exploratory data analysis (EDA) including basic statistics, visualizes relationships between features using seaborn (include three different chart types), and conducts and interprets three separate statistical tests to examine the relationship survival and other features. Summarize the results of the analysis, and do not performing any data cleaning or preprocessing.</code></pre>
+<p>model used:</p>
+<section id="part-1-generate-code" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-generate-code">Part 1: Generate Code</h2>
+<p>Add the output to a code chunk below.</p>
+<p>If your code does not initially run, you may want to comment some of it out and return to it during Task2.</p>
 </section>
-<section id="week-2-jan-12---16" class="level1">
-<h1>Week 2 (Jan 12 - 16)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 12</td>
-<td style="text-align: left;">📖<a href="" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">EVL Quiz</span> <br> CLS</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">CLS1</a> <br> 👩🏻‍🏫 <a href="">CLS2</a> <br> 📝 <a href="">HW:CLS</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 13</td>
-<td style="text-align: left;">📓<a href="" class="badge bg-light">CLS Quiz</a></td>
-<td style="text-align: left;">CLS <br> <span class="badge bg-light">Quiz Retakes</span></td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">CLS3</a> <br> 💻 <a href="">Lab:CLS</a> <br> ☑️ <a href="">PC3</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 14</td>
-<td style="text-align: left;">📖<a href="" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">CLS Quiz</span> <br> DATA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">DATA1</a> <br> 👩🏻‍🏫 <a href="">DATA2</a> <br> 📝 <a href="">HW:DATA</a> <br> ☑️ <a href="">PC4</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 15</td>
-<td style="text-align: left;">📓<a href="" class="badge bg-light">DATA Quiz</a></td>
-<td style="text-align: left;">DATA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">DATA3</a> <br> 💻 <a href="">Lab:DATA</a> <br> ☑️ <a href="">PC4</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 16</td>
-<td style="text-align: left;">📖<a href="" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">DATA Quiz</span> <br> MOD</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">TREE1</a> <br> 👩🏻‍🏫 <a href="">TREE2</a> <br> 📝 <a href="">HW:TREE</a></td>
-</tr>
-</tbody>
-</table>
+<section id="part-2-outline-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-outline-analysis">Part 2: Outline Analysis</h2>
+<p>With the program that was generated, fill in the methods taken for each of the points below (keep it general). Some examples have been filled in for you.</p>
+<p>Once you have listed these out, add a quick explaination for why this step was done (i.e.&nbsp;what did it accomplish? what do you know about the data now?)</p>
+<p>Steps taken below:</p>
+<ol type="1">
+<li>Basic statistics:</li>
+</ol>
+<ul>
+<li><code>head</code></li>
+<li><code>describe</code></li>
+<li><code>isnull</code> + <code>sum</code></li>
+</ul>
+<ol start="2" type="1">
+<li>Visualizations:</li>
+</ol>
+<ul>
+<li><code>sns.boxplot</code></li>
+</ul>
+<ol start="3" type="1">
+<li>Statistical tests:</li>
+</ol>
+<ul>
+<li><code>stats.ttest_ind</code></li>
+</ul>
 </section>
-<section id="week-3-jan-19---23" class="level1">
-<h1>Week 3 (Jan 19 - 23)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 19</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">MOD <br> <span class="badge bg-light">Quiz Retakes</span></td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">KNN</a> <br> 💻 <a href="">Lab:TREE</a> <br> ☑️ <a href="">PC5</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 20</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">TREE Quiz</span> <br> MOD</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">LIN1</a> <br> 👩🏻‍🏫 <a href="">LIN2</a> <br> 📝 <a href="">HW:LIN</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 21</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">MOD</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">SVM</a> <br> 💻 <a href="">Lab:MOD Part 1</a> <br> ☑️ <a href="">PC6</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 22</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">LIN Quiz</span> <br> ENS</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">ENS1</a> <br> 👩🏻‍🏫 <a href="">ENS2</a> <br> 📝 <a href="">HW:ENS</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 23</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">ENS <br> <span class="badge bg-light">Quiz Retakes</span></td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">ENS3</a> <br> 💻 <a href="">Lab:MOD Part 2</a> <br> ☑️ <a href="">PC7</a></td>
-</tr>
-</tbody>
-</table>
+<section id="task-2-critique-the-analysis" class="level1">
+<h1>Task 2: Critique the analysis</h1>
+<p>Time to hack this code apart. The goal of this is to identify areas of improvement of the analysis that was generated.</p>
+<section id="part-1-questions-to-consider" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-questions-to-consider">Part 1: Questions to consider</h2>
+<p>Some initial questions to consider are listed below. Add three more questions you may want to consider when looking over EDA, visualizations, and code in general.</p>
+<p>Example questions: * Is the choice of statistical test appropriate for the analysis? * Are there interpretations of statistical tests beyond p-value? * Are the visualizations clear, informative, and easy to interpret? * Are there any redundancies or areas where the code could be simplified?</p>
+<p>Additional questions to consider:</p>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+</ol>
 </section>
-<section id="week-4-jan-26---30" class="level1">
-<h1>Week 4 (Jan 26 - 30)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 26</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">ENS Quiz</span> <br> NN</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">NN1</a> <br> 👩🏻‍🏫 <a href="">NN2</a> <br> 📝 <a href="">HW:NN</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 27</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">NN</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">NN3</a> <br> 💻 <a href="">Lab:NN</a> <br> ☑️ <a href="">PC8</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 28</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">NN Quiz</span> <br> DL</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">DL1</a> <br> 💻 <a href="">DL2</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 29</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">DL Quiz</span> <br> Last Day</td>
-<td style="text-align: left;">☑️ <a href="">PC9</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 30</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Presentations <br> <span class="badge bg-info">Quiz Retakes</span></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
+<section id="part-2-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-improvements">Part 2: Improvements</h2>
+<p>Using all the questions above, list out three improvements that you would like to implement.</p>
+<p>For each improvement, describe when this would occur (e.g.&nbsp;visualizations, statistical tests), why you would like to implement it, and what additional information is gained by doing so (i.e.&nbsp;what was the purpose of doing it?)</p>
+<p>Improvements:</p>
+<ol type="1">
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</section>
+</section>
+<section id="task-3-implement-improvements" class="level1">
+<h1>Task 3: Implement improvements</h1>
+<p>Now, time to implement your improvements! Your goal is to edit the original prompt to include the improvements you came up with, and then generate code with those improvements included.</p>
+<section id="part-1-updated-prompt" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-updated-prompt">Part 1: Updated Prompt</h2>
+<p>You may find that you will have to iteratively update the prompt to get the exact output you’re looking for. Once you have a final prompt that implements all of the improvements, add it to the text box below</p>
+</section>
+<section id="part-2-updated-code" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-updated-code">Part 2: Updated Code</h2>
+<p>Now add the outputted code generated from the updated prompt below.</p>
+</section>
+</section>
+<section id="task-4-visualizations-that-tell-a-story" class="level1">
+<h1>Task 4: Visualizations that tell a story</h1>
+<p>For this task, you need to create a visualization that could appear in a publication like The Pudding, The New York Times, or FiveThirtyEight. The visualization should aim to tell a story about the Titanic dataset, focusing on the relationship between survival and key variables (e.g., class, sex, age).</p>
+<section id="part-1-viz-1" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-viz-1">Part 1: Viz 1</h2>
+</section>
+<section id="part-2-viz-2" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-viz-2">Part 2: Viz 2</h2>
+</section>
+</section>
+<section id="task-5-reflection" class="level1">
+<h1>Task 5: Reflection</h1>
+<p>Take a moment to reflect on this assignment. What did you like about it? What could be improved? Your answers will not affect your overall grade. This feedback will be used to improve future programming assignments.</p>
 
 
 </section>

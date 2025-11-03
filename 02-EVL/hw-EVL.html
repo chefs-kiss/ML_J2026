@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schedule – Machine Learning</title>
+<title>hw-evl – Machine Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,8 +68,36 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -81,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Course Information</a></li><li class="breadcrumb-item"><a href="../course_information/schedule.html">Schedule</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../course_information/schedule.html" class="sidebar-item-text sidebar-link active">
+  <a href="../course_information/schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -171,240 +199,111 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#week-1-jan-5---9" id="toc-week-1-jan-5---9" class="nav-link active" data-scroll-target="#week-1-jan-5---9">Week 1 (Jan 5 - 9)</a></li>
-  <li><a href="#week-2-jan-12---16" id="toc-week-2-jan-12---16" class="nav-link" data-scroll-target="#week-2-jan-12---16">Week 2 (Jan 12 - 16)</a></li>
-  <li><a href="#week-3-jan-19---23" id="toc-week-3-jan-19---23" class="nav-link" data-scroll-target="#week-3-jan-19---23">Week 3 (Jan 19 - 23)</a></li>
-  <li><a href="#week-4-jan-26---30" id="toc-week-4-jan-26---30" class="nav-link" data-scroll-target="#week-4-jan-26---30">Week 4 (Jan 26 - 30)</a></li>
+  <li><a href="#homework-2-evaluation-and-model-selection" id="toc-homework-2-evaluation-and-model-selection" class="nav-link active" data-scroll-target="#homework-2-evaluation-and-model-selection">Homework 2: Evaluation and Model Selection</a>
+  <ul class="collapse">
+  <li><a href="#model-selection-scenarios" id="toc-model-selection-scenarios" class="nav-link" data-scroll-target="#model-selection-scenarios">Model Selection Scenarios</a>
+  <ul class="collapse">
+  <li><a href="#types-of-models" id="toc-types-of-models" class="nav-link" data-scroll-target="#types-of-models">Types of Models</a></li>
+  <li><a href="#scenario-1-music-streaming" id="toc-scenario-1-music-streaming" class="nav-link" data-scroll-target="#scenario-1-music-streaming">Scenario 1: Music Streaming</a></li>
+  <li><a href="#scenario-2-plant-growth" id="toc-scenario-2-plant-growth" class="nav-link" data-scroll-target="#scenario-2-plant-growth">Scenario 2: Plant Growth</a></li>
+  </ul></li>
+  <li><a href="#evaluation-metrics-classification" id="toc-evaluation-metrics-classification" class="nav-link" data-scroll-target="#evaluation-metrics-classification">Evaluation Metrics: Classification</a></li>
+  <li><a href="#evaluation-metrics-regression" id="toc-evaluation-metrics-regression" class="nav-link" data-scroll-target="#evaluation-metrics-regression">Evaluation Metrics: Regression</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Course Information</a></li><li class="breadcrumb-item"><a href="../course_information/schedule.html">Schedule</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Schedule</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="week-1-jan-5---9" class="level1">
-<h1>Week 1 (Jan 5 - 9)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 5</td>
-<td style="text-align: left;">📖<a href="../course_information/syllabus.html" class="badge bg-light">syllabus</a></td>
-<td style="text-align: left;">INTRO</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">INTRO</a> 💻 <a href="" class="badge bg-light">Lab: Intro</a> ☑️ <a href="" class="badge bg-light">PC0</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 6</td>
-<td style="text-align: left;">📖<a href="../01-EDA/rr-EDA.qmd.qmd" class="badge bg-light">readings</a></td>
-<td style="text-align: left;">EDA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EDA1</a> <a href="" class="badge bg-light">EDA2</a> 📝 <a href="" class="badge bg-light">HW:EDA</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 7</td>
-<td style="text-align: left;">📓<a href="../01-EDA/std-EDA.qmd0" class="badge bg-light">EDA study guide</a></td>
-<td style="text-align: left;">EDA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EDA3</a> 💻 <a href="" class="badge bg-light">Lab:EDA</a> ☑️ <a href="" class="badge bg-light">PC1</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 8</td>
-<td style="text-align: left;">📖<a href="../02-EVL/rr-EVL.html" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">EDA Quiz</span> <br> EVL</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EVL1</a> <a href="" class="badge bg-light">EVL2</a> 📝 <a href="" class="badge bg-light">HW:EVL</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 9</td>
-<td style="text-align: left;">📓<a href="" class="badge bg-light">EDA study guide</a></td>
-<td style="text-align: left;">EVL</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="" class="badge bg-light">EVL3</a> 💻 <a href="" class="badge bg-light">Lab:EVL</a> ☑️ <a href="" class="badge bg-light">PC2</a></td>
-</tr>
-</tbody>
-</table>
+<section id="homework-2-evaluation-and-model-selection" class="level1">
+<h1>Homework 2: Evaluation and Model Selection</h1>
+<p>Due: start of class on the day indicated on the syllabus <br> Complete the following exercises. Remember to explain your answers.<br></p>
+<section id="model-selection-scenarios" class="level2">
+<h2 class="anchored" data-anchor-id="model-selection-scenarios">Model Selection Scenarios</h2>
+<ol type="1">
+<li>We’d like to identify models for some real-world scenarios.</li>
+</ol>
+<section id="types-of-models" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-models">Types of Models</h3>
+<ol type="a">
+<li><p>The following questions ask you to choose three models for your workflow:</p>
+<ol type="i">
+<li><p>Before we select any models, we’d like to get a <strong>baseline model</strong> for comparison purposes. What is this baseline model called? Explain how it works (non-technical).</p></li>
+<li><p>We’d like to pick a <strong>simple model</strong> for our workflow. Will this model have <em>higher bias or higher variance</em>? Explain why.</p></li>
+<li><p>We’d like to pick a more <strong>complex model</strong> for our workflow. Will this model have <em>higher bias or higher variance</em>? Explain why.</p></li>
+</ol></li>
+</ol>
 </section>
-<section id="week-2-jan-12---16" class="level1">
-<h1>Week 2 (Jan 12 - 16)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 12</td>
-<td style="text-align: left;">📖<a href="" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">EVL Quiz</span> <br> CLS</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">CLS1</a> <br> 👩🏻‍🏫 <a href="">CLS2</a> <br> 📝 <a href="">HW:CLS</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 13</td>
-<td style="text-align: left;">📓<a href="" class="badge bg-light">CLS Quiz</a></td>
-<td style="text-align: left;">CLS <br> <span class="badge bg-light">Quiz Retakes</span></td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">CLS3</a> <br> 💻 <a href="">Lab:CLS</a> <br> ☑️ <a href="">PC3</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 14</td>
-<td style="text-align: left;">📖<a href="" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">CLS Quiz</span> <br> DATA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">DATA1</a> <br> 👩🏻‍🏫 <a href="">DATA2</a> <br> 📝 <a href="">HW:DATA</a> <br> ☑️ <a href="">PC4</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 15</td>
-<td style="text-align: left;">📓<a href="" class="badge bg-light">DATA Quiz</a></td>
-<td style="text-align: left;">DATA</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">DATA3</a> <br> 💻 <a href="">Lab:DATA</a> <br> ☑️ <a href="">PC4</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 16</td>
-<td style="text-align: left;">📖<a href="" class="badge bg-light">readings</a></td>
-<td style="text-align: left;"><span class="badge bg-info">DATA Quiz</span> <br> MOD</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">TREE1</a> <br> 👩🏻‍🏫 <a href="">TREE2</a> <br> 📝 <a href="">HW:TREE</a></td>
-</tr>
-</tbody>
-</table>
+<section id="scenario-1-music-streaming" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-1-music-streaming">Scenario 1: Music Streaming</h3>
+<ol start="2" type="a">
+<li><p>A music streaming service wants to group songs from its massive catalog into distinct genres based on their acoustic features, such as tempo, key, loudness, danceability, energy, and mood. The goal is to automatically identify patterns in the music and suggest personalized playlists or genres to users based on these patterns.</p>
+<ol type="i">
+<li><p>What type of <strong>model approach</strong> should we take?</p></li>
+<li><p>What is our <strong>target</strong> variable?</p></li>
+<li><p>What is our <strong>feature set</strong>?</p></li>
+<li><p>Give an example of an algorithm we could use for our <strong>simple model</strong>:</p></li>
+<li><p>Give an example of an algorithm we could use for our more <strong>complicated model</strong>:</p></li>
+</ol></li>
+</ol>
 </section>
-<section id="week-3-jan-19---23" class="level1">
-<h1>Week 3 (Jan 19 - 23)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 19</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">MOD <br> <span class="badge bg-light">Quiz Retakes</span></td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">KNN</a> <br> 💻 <a href="">Lab:TREE</a> <br> ☑️ <a href="">PC5</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 20</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">TREE Quiz</span> <br> MOD</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">LIN1</a> <br> 👩🏻‍🏫 <a href="">LIN2</a> <br> 📝 <a href="">HW:LIN</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 21</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">MOD</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">SVM</a> <br> 💻 <a href="">Lab:MOD Part 1</a> <br> ☑️ <a href="">PC6</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 22</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">LIN Quiz</span> <br> ENS</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">ENS1</a> <br> 👩🏻‍🏫 <a href="">ENS2</a> <br> 📝 <a href="">HW:ENS</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 23</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">ENS <br> <span class="badge bg-light">Quiz Retakes</span></td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">ENS3</a> <br> 💻 <a href="">Lab:MOD Part 2</a> <br> ☑️ <a href="">PC7</a></td>
-</tr>
-</tbody>
-</table>
+<section id="scenario-2-plant-growth" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-2-plant-growth">Scenario 2: Plant Growth</h3>
+<ol start="3" type="a">
+<li><p>A biologist is conducting an experiment to study the effect of various environmental factors on the growth of a specific type of plant. The goal is to predict the plant’s growth (measured in height) based on factors such as temperature, humidity, soil pH, light intensity, and water availability.</p>
+<ol type="i">
+<li><p>What type of <strong>model approach</strong> should we take?</p></li>
+<li><p>What is our <strong>target</strong> variable?</p></li>
+<li><p>What is our <strong>feature set</strong>?</p></li>
+<li><p>Give an example of an algorithm we could use for our <strong>simple model</strong>:</p></li>
+<li><p>Give an example of an algorithm we could use for our more <strong>complicated model</strong>:</p></li>
+</ol></li>
+</ol>
 </section>
-<section id="week-4-jan-26---30" class="level1">
-<h1>Week 4 (Jan 26 - 30)</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;"><strong>dow</strong></th>
-<th style="text-align: center;"><strong>date</strong></th>
-<th style="text-align: left;"><strong>prepare</strong></th>
-<th style="text-align: left;"><strong>topic</strong></th>
-<th style="text-align: left;"><strong>materials</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">M</td>
-<td style="text-align: center;">Jan 26</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">ENS Quiz</span> <br> NN</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">NN1</a> <br> 👩🏻‍🏫 <a href="">NN2</a> <br> 📝 <a href="">HW:NN</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">Jan 27</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">NN</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">NN3</a> <br> 💻 <a href="">Lab:NN</a> <br> ☑️ <a href="">PC8</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">W</td>
-<td style="text-align: center;">Jan 28</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">NN Quiz</span> <br> DL</td>
-<td style="text-align: left;">👩🏻‍🏫 <a href="">DL1</a> <br> 💻 <a href="">DL2</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Th</td>
-<td style="text-align: center;">Jan 29</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><span class="badge bg-info">DL Quiz</span> <br> Last Day</td>
-<td style="text-align: left;">☑️ <a href="">PC9</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">Jan 30</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">Presentations <br> <span class="badge bg-info">Quiz Retakes</span></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="evaluation-metrics-classification" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-metrics-classification">Evaluation Metrics: Classification</h2>
+<ol start="2" type="1">
+<li>Suppose we have trained a classifier that attempts to predict whether or not a person has COVID based off of their symptoms. When we compare the results predicted by our classifier to each person’s actual COVID status, we get the following results on the testing set. Here, 1 represents <strong>has COVID</strong>, while 0 represents <strong>does not have COVID</strong>.</li>
+</ol>
+<p><span class="math display">\[
+\begin{array}{c|c c}
+&amp; y_{\text{true}} = 1 &amp; y_{\text{true}} = 0 \\ \hline
+y_{\text{pred}} = 1 &amp; 128 &amp; 56 \\
+y_{\text{pred}} = 0 &amp; 72 &amp; 285
+\end{array}
+\]</span></p>
+<p>As an example for how to read this table, this means that there were 56 people who did not have COVID, that the classifier predicted had COVID.</p>
+<ol type="a">
+<li><p>What is the <strong>accuracy</strong> of this classifier? Write a sentence explaining what this means to someone who is not in this course.</p></li>
+<li><p>What is the <strong>precision</strong> of this classifier? Write a sentence explaining what this means to someone who is not in this course.</p></li>
+<li><p>What is the <strong>recall</strong> of this classifier? Write a sentence explaining what this means to someone who is not in this course.</p></li>
+<li><p>What is the <strong>F1-score</strong> of this classifier?</p></li>
+<li><p>What do you think of the performance of this classifier? Consider the problem — how easy or difficult is it to predict COVID status based on symptoms?</p></li>
+</ol>
+</section>
+<section id="evaluation-metrics-regression" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-metrics-regression">Evaluation Metrics: Regression</h2>
+<ol start="3" type="1">
+<li><p>Suppose we have trained a regression model that attempts to predict house prices based on their location and their characteristics. When we compare the houses’ actual selling price with their predicted price, we get the following results on the (very small) testing set. <span class="math display">\[
+\begin{array}{c|c c}
+\text{actual price} (\$) &amp; 399,000 &amp; 157,000 &amp; 223,000 &amp; 347,000\\ \hline
+\text{predicted price}(\$)  &amp; 410,000 &amp; 150,000 &amp; 225,000 &amp; 350,000
+\end{array}
+\]</span></p>
+<ol type="a">
+<li>What is the <strong>mean squared error</strong> for the model?</li>
+<li>What is the root <strong>mean squared error</strong> for the model?</li>
+<li>What is the <strong>mean absolute error</strong> for the model?</li>
+</ol></li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
