@@ -6,4 +6,11 @@ title: "Labs"
 Stuff about labs
 
 ## List
-[Lab 0](labs/lab0.ipynb) 
+[Lab 1](labs/lab1.ipynb) 
+[Lab 2](labs/lab2.ipynb) 
+[Lab 3](labs/lab3.ipynb) 
+[Lab 4](labs/lab4.ipynb) 
+[Lab 5](labs/lab5.ipynb) 
+[Lab 6](labs/lab6.ipynb) 
+[Lab 7](labs/lab7.ipynb) 
+[Lab 8](labs/lab8.ipynb) 
