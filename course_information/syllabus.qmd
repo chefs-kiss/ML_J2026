@@ -22,16 +22,20 @@ will also explore real-world applications of machine learning, and discuss the e
 the use of these algorithms.
 
 ## Course Goals
-Through the lens of machine learning, we will: <br>
-    -   develop and interpret applications of algorithms to domain use-cases
-    -   develop working software that satisfies coding best practices
-    -   work effectively, both individually and in teams
-    -   communicate information effectively to both technical and non-technical audiences
+Through the lens of machine learning, we will:
 
-*Course Schedule*: The schedule for this course is available [here](course_information/schedule). This document is likely to be 
+- develop and interpret applications of algorithms to domain use-cases
+- develop working software that satisfies coding best practices
+- work effectively, both individually and in teams
+- communicate information effectively to both technical and non-technical audiences
+
+## Course Schedule
+The schedule for this course is available [here](course_information/schedule) or by navigating to Course Information > Schedule on the navigation window to the left. 
+This page is likely to be 
 updated throughout the semester, and will be announced in class if it is. 
 
-*Active Learning and Engagement*: I expect you to take an active role in class each day, participating positively,
+## Active Learning and Engagement
+I expect you to take an active role in class each day, participating positively,
 wholeheartedly, and respectfully in class/group discussions and other activities. You may need sick/mental health
 days. You are responsible for learning the material on the day you missed. If you are experiencing issues causing
 you to miss classes often, please speak with me as this may be evident of a possible failing grade. You can also visit
@@ -46,8 +50,7 @@ If you find that you have questions on a particular topic, check out the reading
 
 ## Article Reviews
 (5pt * 3 → 15 pt): In place of readings, you will be required to find three (3) articles related to machine learning, and complete a review on each.
-The article reviews are due before the final exam, though it is recommended to finish them as early as possible.
-Fill out this article review [doc] and submit a pdf.
+The article reviews are due before the final exam, though it is recommended to finish them as early as possible. Read more about [article reviews](../articles.qmd) here.
 
 
 ## Homework Assignments 
@@ -73,39 +76,38 @@ You can find more in-depth information regarding the project on the [project pag
 
 The project will be divided into the following components:
 
-### Progress Checks
-(4pt * 9 → 36 pt): There are nine progress checks during the semester, each worth 4 points (see the schedule).
+- Progress Checks (4pt * 9 → 36 pt): There are nine progress checks during the semester, each worth 4 points (see the schedule).
 To receive full credit for a progress check, you must check in with your instructor before leaving class on the day of the check.
-
-#### Final Submission
-(30 pts): 
-The final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. 
+- Final Submission (30 pts): The final submission evaluates the overall quality of your project and presentation, based on the materials submitted prior to the final exam. 
 Submissions are due the night before finals. A detailed grading rubric will be available on the project page.
-
-#### Small group presentations
-(9 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. 
-Grading is based on the quality of your peer review during these rounds. 
-The peer review form will be available on the project page.
-
-### Reflection
-(5 pts): You will be asked to reflect upon the project. What went well, what could be improved upon.
+- Small group presentations (9 pts): During presentations, you will participate in three rounds of small-group presentations, presenting one-on-one with another project. 
+Grading is based on the quality of your peer review during these rounds. The peer review form will be available on the project page.
+- Reflection (5 pts): Complete the reflection form up on the project page. This form asks you what went well, what could be improved upon, ect.
 
 Late Work: No late work will be accepted. 
 
 ## Standards based Quizzes 
 (8pt * 9 → 72 pt): Each module will have a quiz that will be assessed using standards-based grading. 
-Each quiz will contain between 1-2 questions called standards. You will be given three attempts to pass each standard. The first attempt will be
-during the module quiz as indicated in the course schedule. The second attempt will be during the retake day associated with each module (see schedule). 
-All final attempts for standards will take place during our final exam time.
+Each quiz will contain two (2) questions called standards. There will be a study guide for each quiz that indicates which standards are being assessed. 
+The full list of standards is in the section [ML Core Standards](#ml-core-standards) found on this page.
+
+You will be given three attempts to pass each standard. 
+The first attempt will be during the module quiz as indicated in the course schedule. 
+The second attempt will be during the retake day associated with each module (see schedule). 
+All final attempts for standards will take place during our final exam time after presentations.
 
 The standards are graded on an 8-point scale and binned into four categories:
 
- - P: proficient (8) 
- - R - small revision needed 
- - S - not satisfactory (4) 
- - I - incomplete (0)
+ - P  proficient (8 pt) 
+ - R small revision needed 
+ - N not satisfactory (4 pt) 
+ - I incomplete (0 pt)
 
-Revisions must be handed in before your next quiz. Standards with an R have a fully correct solution handed in will be bumped up to a P. Otherwise it will get bumped down to an S.
+Revisions must be handed in before your next quiz. 
+Standards with an R have a fully correct solution handed in will be bumped up to a P. 
+Otherwise it will get bumped down to an N.
+
+Any student with N or I for three or more standards at the end of the course will be ineligible for a final grade greater than a B- in the course.
 
 ## Extra Credit
 Some projects have additional questions you can answer for extra credit.
@@ -113,9 +115,10 @@ Some projects have additional questions you can answer for extra credit.
 ## Final Exam
 The final exam is during the assigned period:
 
-Friday, Jan 30 from 11:00 - 3:00 P.M.
+Friday, Jan 30 from 10:40 - 3:00 P.M.
 
-Any final attempt on standards will take place during our final time. If you successfully passed each standard, you do not have to attend the final exam. Any student with S or I for three or more standards will be ineligible for a final grade greater than a B- in the course.
+Any final attempt on standards will take place during the second half of our final time. 
+If you successfully passed each standard, you do not have to attend the second half of our final exam. 
 
 ### Final Grade Scale
 97 ≤ A+ ≤ 100 87 ≤ B+ ≤ 90 77 ≤ C+ ≤ 80 67 ≤ D+ ≤ 70 <br>

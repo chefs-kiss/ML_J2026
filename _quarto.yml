@@ -21,18 +21,20 @@ website:
           text: Home
         - href: course_information/schedule.qmd
           text: Schedule
-        - href: course_information/support.qmd
-          text: Support
-        - href: https://github.com/chefs-kiss/ML_J2026/discussions
-          text: Forum
-    - href: homework.qmd
-      text: Homework
-    - href: labs.qmd
-      text: Labs
-    - href: project.qmd
-      text: Semester Project
-    - href: slides.qmd
-      text: Slides
+        - href: https://mdl.stolaf.edu/mod/forum/view.php?id=514243
+          text: Moodle Forum
+    - section: "Materials"
+      contents:
+        - href: homework.qmd
+          text: Homework
+        - href: labs.qmd
+          text: Labs
+        - href: project.qmd
+          text: Project
+        - href: slides.qmd
+          text: Slides
+        - href: articles.qmd
+          text: Article Reviews
 
 format:
   html:
