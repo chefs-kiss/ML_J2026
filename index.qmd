@@ -7,4 +7,4 @@ This is the homepage for CSCI 200 - Introduction to Machine Learning taught by P
 
 You can find the course syllabus [here](course_information/syllabus.qmd) and the course schedule [here](course_information/schedule.qmd)
 
-We will be using this Moodle page to submit assignments.
+We will be using this [Moodle page](https://mdl.stolaf.edu/course/view.php?id=56310) to [submit assignments](https://mdl.stolaf.edu/course/section.php?id=1379416) and host our class [discussion forum](https://mdl.stolaf.edu/mod/forum/view.php?id=514243)
