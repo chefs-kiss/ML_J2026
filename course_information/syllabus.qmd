@@ -30,7 +30,7 @@ Through the lens of machine learning, we will:
 - communicate information effectively to both technical and non-technical audiences
 
 ## Course Schedule
-The schedule for this course is available [here](course_information/schedule) or by navigating to Course Information > Schedule on the navigation window to the left. 
+The schedule for this course is available by navigating to Course Information > Schedule on the navigation window to the left. 
 This page is likely to be 
 updated throughout the semester, and will be announced in class if it is. 
 
