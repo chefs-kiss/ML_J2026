@@ -31,6 +31,8 @@ website:
       text: Labs
     - href: project.qmd
       text: Semester Project
+    - href: slides.qmd
+      text: Slides
 
 format:
   html:
