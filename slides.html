@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Slides Redirect</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./slides.html">Slides</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -160,6 +160,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Semester Project</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Slides</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -191,45 +197,54 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script>
-  const slides = {
-    "EDA1": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g3a19c45b4b0_1_5#slide=id.g3a19c45b4b0_1_5",
-    "EDA2": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g33a550423b4_0_650#slide=id.g33a550423b4_0_650",
-    "EDA3": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g33a550423b4_0_1438#slide=id.g33a550423b4_0_1438",
-    "EVL1":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g323999f4ad1_0_263#slide=id.g323999f4ad1_0_263",
-    "EVL2":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g32c0696979f_0_98#slide=id.g32c0696979f_0_98",
-    "EVL3":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g32c0696979f_0_104#slide=id.g32c0696979f_0_104",
-    "CLS1":"",
-    "CLS2":"",
-    "CLS3":"",
-    "DATA1":"",
-    "DATA2":"",
-    "DATA3":"",
-    "TREE1":"",
-    "TREE2":"",
-    "KNN":"",
-    "LIN1":"",
-    "LIN2":"",
-    "SVM":"",
-    "ENS1":"",
-    "ENS2":"",
-    "ENS3":"",
-    "NN1":"",
-    "NN2":"",
-    "NN3":"",
-    "DL1":"",
-    "DL2":"",
-    "DL3":""
+  // Slides organized by topic
+  const slidesByTopic = {
+    "EDA": {
+      "EDA1": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g3a19c45b4b0_1_5#slide=id.g3a19c45b4b0_1_5",
+      "EDA2": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g33a550423b4_0_650#slide=id.g33a550423b4_0_650",
+      "EDA3": "https://docs.google.com/presentation/d/1vXiVFaSsBIhlHjO_p1hXRefWfyRjFdsBXQVJslPyF_g/edit?slide=id.g33a550423b4_0_1438#slide=id.g33a550423b4_0_1438"
+    },
+    "EVL": {
+      "EVL1":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g323999f4ad1_0_263#slide=id.g323999f4ad1_0_263",
+      "EVL2":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g32c0696979f_0_98#slide=id.g32c0696979f_0_98",
+      "EVL3":"https://docs.google.com/presentation/d/1GtvpOFBLJzXoIgXyQgwvJR5PDyIkhCuacD80LlGRHic/edit?slide=id.g32c0696979f_0_104#slide=id.g32c0696979f_0_104"
+    },
+    "CLS": {"CLS1":"","CLS2":"","CLS3":""},
+    "DATA": {"DATA1":"","DATA2":"","DATA3":""},
+    "MOD": {"TREE1":"","TREE2":"","KNN":"","LIN1":"","LIN2":"","SVM":""},
+    "ENS": {"ENS1":"","ENS2":"","ENS3":""},
+    "NN": {"NN1":"","NN2":"","NN3":""},
+    "DL": {"DL1":"","DL2":"","DL3":""}
   };
 
+  // Flatten slides for redirect lookup
+  const slidesFlat = {};
+  for (const topic in slidesByTopic) {
+    Object.assign(slidesFlat, slidesByTopic[topic]);
+  }
+
+  // Read ?q= parameter
   const params = new URLSearchParams(window.location.search);
   const target = params.get("q");
 
-  if (target && slides[target]) {
-    window.location.href = slides[target];
+  if (target && slidesFlat[target]) {
+    // Redirect if valid
+    window.location.replace(slidesFlat[target]);
   } else {
+    // Build HTML for grouped topics
     document.write("<h2>Select a slide deck:</h2>");
-    for (const key in slides) {
-      document.write(`<p><a href="?q=${key}">${key} slides</a></p>`);
+    for (const topic in slidesByTopic) {
+      document.write(`<div style="border:1px solid #ccc; padding:10px; margin:10px 0; border-radius:6px;">`);
+      document.write(`<h3>${topic} Slides</h3>`);
+      for (const key in slidesByTopic[topic]) {
+        const url = slidesByTopic[topic][key];
+        if (url) {
+          document.write(`<a href="?q=${key}" style="display:inline-block; margin:4px; padding:6px 12px; background-color:#e0e0e0; border-radius:4px; text-decoration:none;">${key}</a>`);
+        } else {
+          document.write(`<span style="display:inline-block; margin:4px; padding:6px 12px; background-color:#f0f0f0; border-radius:4px; color:#888;">${key}</span>`);
+        }
+      }
+      document.write("</div>");
     }
   }
 </script>
