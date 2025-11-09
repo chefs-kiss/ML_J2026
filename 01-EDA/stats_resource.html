@@ -202,7 +202,7 @@
 </section>
 <section id="setup" class="slide level2">
 <h2>Setup</h2>
-<div id="8bc6e763" class="cell" data-execution_count="1">
+<div id="f48a3cf8" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Grab the libraries we want to use</span></span>
 <span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -218,7 +218,7 @@
 <span id="cb1-13"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Set random seed for reproducibility</span></span>
 <span id="cb1-14"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="f1edb51f" class="cell" data-execution_count="2">
+<div id="bda3977e" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Libraries loaded successfully!
@@ -296,7 +296,7 @@ Pandas version: 2.3.3</code></pre>
 </section>
 <section id="data-types-in-python" class="slide level2">
 <h2>Data Types in Python</h2>
-<div id="cca2f097" class="cell" data-execution_count="3">
+<div id="94af8218" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create sample data</span></span>
 <span id="cb3-2"><a aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {</span>
 <span id="cb3-3"><a aria-hidden="true" tabindex="-1"></a>    <span class="st">'age'</span>: [<span class="dv">25</span>, <span class="dv">30</span>, <span class="dv">35</span>, <span class="dv">40</span>],  <span class="co"># Continuous</span></span>
@@ -308,7 +308,7 @@ Pandas version: 2.3.3</code></pre>
 <span id="cb3-9"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-10"><a aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="f0c1a918" class="cell" data-execution_count="4">
+<div id="97d65088" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Since this is a small dataset, we can display the entire thing:
@@ -339,11 +339,11 @@ dtype: object</code></pre>
 <li><strong>Record</strong>: A row (case, observation, sample)</li>
 <li><strong>Outcome</strong>: Target variable to predict</li>
 </ul>
-<div id="6e797091" class="cell" data-execution_count="5">
+<div id="4770f1b0" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
-<p><img data-src="stats_resource_files/figure-revealjs/cell-6-output-1.png" width="725" height="374"></p>
+<p><img data-src="stats_resource_files/figure-revealjs/cell-6-output-1.png" width="771" height="374"></p>
 </figure>
 </div>
 </div>
@@ -370,7 +370,7 @@ x_{\frac{n+1}{2}}, &amp; n \text{ odd} \\[2mm]
 </section>
 <section id="computing-location-estimates" class="slide level2">
 <h2>Computing Location Estimates</h2>
-<div id="b3e066bc" class="cell" data-execution_count="6">
+<div id="b8a336e5" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Sample data: state populations (in millions)</span></span>
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> np.array([<span class="fl">4.78</span>, <span class="fl">0.71</span>, <span class="fl">6.39</span>, <span class="fl">2.92</span>, <span class="fl">37.25</span>, </span>
 <span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a>                       <span class="fl">5.03</span>, <span class="fl">3.57</span>, <span class="fl">0.90</span>])</span>
@@ -387,7 +387,7 @@ x_{\frac{n+1}{2}}, &amp; n \text{ odd} \\[2mm]
 <span id="cb5-14"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-15"><a aria-hidden="true" tabindex="-1"></a>trimmed_mean <span class="op">=</span> trim_mean(population, <span class="fl">0.1</span>) <span class="co">#trimming 10%</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="0e0ba386" class="cell" data-execution_count="7">
+<div id="49d2960e" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Population data: [ 4.78  0.71  6.39  2.92 37.25  5.03  3.57  0.9 ]
@@ -402,7 +402,7 @@ Note: Mean &gt; Trimmed Mean &gt; Median due to outliers</code></pre>
 </section>
 <section id="weighted-mean" class="slide level2">
 <h2>Weighted Mean</h2>
-<div id="3c439f9c" class="cell" data-execution_count="8">
+<div id="5278bc49" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Murder rates and populations by state</span></span>
 <span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a>murder_rate <span class="op">=</span> np.array([<span class="fl">5.7</span>, <span class="fl">5.6</span>, <span class="fl">4.7</span>, <span class="fl">5.6</span>, <span class="fl">4.4</span>])</span>
 <span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> np.array([<span class="fl">4.78</span>, <span class="fl">0.71</span>, <span class="fl">6.39</span>, <span class="fl">2.92</span>, <span class="fl">37.25</span>])</span>
@@ -414,7 +414,7 @@ Note: Mean &gt; Trimmed Mean &gt; Median due to outliers</code></pre>
 <span id="cb7-9"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Weighted mean (accounts for population)</span></span>
 <span id="cb7-10"><a aria-hidden="true" tabindex="-1"></a>weighted_mean <span class="op">=</span> np.average(murder_rate, weights<span class="op">=</span>population)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="abb9c23d" class="cell" data-execution_count="9">
+<div id="6de81101" class="cell" data-execution_count="9">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 State Data:
@@ -455,7 +455,7 @@ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
 </section>
 <section id="computing-variability" class="slide level2">
 <h2>Computing Variability</h2>
-<div id="4ccd9dd3" class="cell" data-execution_count="10">
+<div id="da087952" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.array([<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">7</span>, <span class="dv">10</span>, <span class="dv">15</span>])</span>
 <span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a aria-hidden="true" tabindex="-1"></a>data_range <span class="op">=</span> np.<span class="bu">max</span>(data) <span class="op">-</span> np.<span class="bu">min</span>(data)</span>
@@ -465,7 +465,7 @@ s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
 <span id="cb9-7"><a aria-hidden="true" tabindex="-1"></a>std_dev <span class="op">=</span> np.std(data, ddof<span class="op">=</span><span class="dv">1</span>)</span>
 <span id="cb9-8"><a aria-hidden="true" tabindex="-1"></a>mad <span class="op">=</span> np.mean(np.<span class="bu">abs</span>(data <span class="op">-</span> np.mean(data)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="d734157d" class="cell" data-execution_count="11">
+<div id="be52d9c1" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Data: [ 1  4  4  7 10 15]
@@ -490,12 +490,12 @@ Measures of Variability:
 </section>
 <section id="percentiles-and-boxplots" class="slide level2">
 <h2>Percentiles and Boxplots</h2>
-<div id="7f2ae201" class="cell" data-fig-height="3.5" data-execution_count="12">
+<div id="74dc97d8" class="cell" data-fig-height="3.5" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.exponential(scale<span class="op">=</span><span class="dv">2</span>, size<span class="op">=</span><span class="dv">100</span>)</span>
 <span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a>percentiles <span class="op">=</span> np.percentile(data, [<span class="dv">5</span>, <span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">75</span>, <span class="dv">95</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="2107a4b9" class="cell" data-execution_count="13">
+<div id="1dd3a09d" class="cell" data-execution_count="13">
 <div class="cell-output cell-output-stdout">
 <pre><code>Percentiles (5th, 25th, 50th, 75th, 95th):
   5th percentile: 0.09
@@ -505,7 +505,7 @@ Measures of Variability:
   95th percentile: 5.95</code></pre>
 </div>
 </div>
-<div id="7e4774a6" class="cell" data-execution_count="14">
+<div id="7838ab41" class="cell" data-execution_count="14">
 <details class="code-fold">
 <summary>Show/Hide Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">3</span>))</span>
@@ -532,11 +532,11 @@ Measures of Variability:
 </section>
 <section id="frequency-tables-and-histograms" class="slide level2">
 <h2>Frequency Tables and Histograms</h2>
-<div id="24dc15fe" class="cell" data-execution_count="15">
+<div id="384ae3e1" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb14-2"><a aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">15</span>, <span class="dv">1000</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="ddecc5ca" class="cell" data-fig-height="3.5" data-execution_count="16">
+<div id="7386c469" class="cell" data-fig-height="3.5" data-execution_count="16">
 <details class="code-fold">
 <summary>Show/Hide Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="fl">3.5</span>))</span>
@@ -556,7 +556,7 @@ Measures of Variability:
 </div>
 </div>
 </div>
-<div id="9a0b9f25" class="cell" data-execution_count="17">
+<div id="a233704b" class="cell" data-execution_count="17">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Frequency Table (first 5 bins):
@@ -573,7 +573,7 @@ Mean: 100.29, Std: 14.69</code></pre>
 </section>
 <section id="density-plots" class="slide level2">
 <h2>Density Plots</h2>
-<div id="d73eb551" class="cell" data-fig-height="3.5" data-execution_count="18">
+<div id="10252498" class="cell" data-fig-height="3.5" data-execution_count="18">
 <details class="code-fold">
 <summary>Show/Hide Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Kernel density estimation (simple implementation)</span></span>
@@ -629,7 +629,7 @@ Mean: 100.29, Std: 14.69</code></pre>
 </section>
 <section id="computing-correlation" class="slide level2">
 <h2>Computing Correlation</h2>
-<div id="2220f72b" class="cell" data-execution_count="19">
+<div id="48f063d5" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Generate correlated data</span></span>
 <span id="cb18-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb18-3"><a aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span>
@@ -668,7 +668,7 @@ Note: Correlation ranges from -1 (perfect negative) to +1 (perfect positive)</co
 </section>
 <section id="scatterplot-with-correlation" class="slide level2">
 <h2>Scatterplot with Correlation</h2>
-<div id="d8130751" class="cell" data-fig-height="3.5" data-execution_count="20">
+<div id="2c900baf" class="cell" data-fig-height="3.5" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb20-2"><a aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.random.normal(<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">100</span>)</span>
 <span id="cb20-3"><a aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> x <span class="op">+</span> np.random.normal(<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="dv">100</span>)</span>
@@ -708,7 +708,7 @@ Intercept: 0.004</code></pre>
 </section>
 <section id="hexagonal-binning" class="slide level2">
 <h2>Hexagonal Binning</h2>
-<div id="1d176048" class="cell" data-fig-height="3.5" data-execution_count="21">
+<div id="33ca3224" class="cell" data-fig-height="3.5" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Large dataset example</span></span>
 <span id="cb22-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb22-3"><a aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">10000</span></span>
@@ -732,7 +732,7 @@ Intercept: 0.004</code></pre>
 <div class="cell-output cell-output-display">
 <div>
 <figure>
-<p><img data-src="stats_resource_files/figure-revealjs/cell-22-output-1.png" width="883" height="326"></p>
+<p><img data-src="stats_resource_files/figure-revealjs/cell-22-output-1.png" width="888" height="326"></p>
 </figure>
 </div>
 </div>
@@ -747,7 +747,7 @@ Useful when scatterplots become too dense to interpret</code></pre>
 </section>
 <section id="categorical-data-bar-charts" class="slide level2">
 <h2>Categorical Data: Bar Charts</h2>
-<div id="df01d31b" class="cell" data-fig-height="3.5" data-execution_count="22">
+<div id="a1de0b44" class="cell" data-fig-height="3.5" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Flight delay causes</span></span>
 <span id="cb24-2"><a aria-hidden="true" tabindex="-1"></a>causes <span class="op">=</span> [<span class="st">'Carrier'</span>, <span class="st">'ATC'</span>, <span class="st">'Weather'</span>, <span class="st">'Security'</span>, <span class="st">'Inbound'</span>]</span>
 <span id="cb24-3"><a aria-hidden="true" tabindex="-1"></a>percentages <span class="op">=</span> [<span class="fl">23.02</span>, <span class="fl">30.40</span>, <span class="fl">4.03</span>, <span class="fl">0.12</span>, <span class="fl">42.43</span>]</span>
@@ -792,7 +792,7 @@ Total: 100.00%</code></pre>
 </section>
 <section id="contingency-tables" class="slide level2">
 <h2>Contingency Tables</h2>
-<div id="ce463386" class="cell" data-execution_count="23">
+<div id="1e6c1c4e" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create sample loan data</span></span>
 <span id="cb26-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb26-3"><a aria-hidden="true" tabindex="-1"></a>grades <span class="op">=</span> np.random.choice([<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>, <span class="st">'D'</span>], size<span class="op">=</span><span class="dv">1000</span>, </span>
@@ -841,7 +841,7 @@ Example: What % of Grade A loans are Current, Paid, Late, etc.?</code></pre>
 </section>
 <section id="violin-plots" class="slide level2">
 <h2>Violin Plots</h2>
-<div id="ba192d03" class="cell" data-fig-height="3.5" data-execution_count="24">
+<div id="ccb6e478" class="cell" data-fig-height="3.5" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Compare distributions across groups</span></span>
 <span id="cb28-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb28-3"><a aria-hidden="true" tabindex="-1"></a>group_a <span class="op">=</span> np.random.normal(<span class="dv">10</span>, <span class="dv">2</span>, <span class="dv">100</span>)</span>
@@ -903,7 +903,7 @@ Violin width shows density at each value level</code></pre>
 </section>
 <section id="random-sampling-in-python" class="slide level2">
 <h2>Random Sampling in Python</h2>
-<div id="6285f678" class="cell" data-execution_count="25">
+<div id="87dd9037" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create a population</span></span>
 <span id="cb30-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb30-3"><a aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">15</span>, <span class="dv">10000</span>)</span>
@@ -941,7 +941,7 @@ Sampling error (expected): ~1.50</code></pre>
 </section>
 <section id="stratified-sampling" class="slide level2">
 <h2>Stratified Sampling</h2>
-<div id="0868efda" class="cell" data-execution_count="26">
+<div id="a88995a7" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Create stratified population (3 distinct groups)</span></span>
 <span id="cb32-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb32-3"><a aria-hidden="true" tabindex="-1"></a>stratum_a <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">10</span>, <span class="dv">7000</span>)  <span class="co"># 70% of population</span></span>
@@ -982,7 +982,7 @@ Stratified sampling ensures representation from all groups</code></pre>
 </section>
 <section id="demonstrating-sampling-distribution" class="slide level2">
 <h2>Demonstrating Sampling Distribution</h2>
-<div id="2d7afc7e" class="cell" data-fig-height="3.5" data-execution_count="27">
+<div id="58b32bb9" class="cell" data-fig-height="3.5" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Draw many samples and compute means</span></span>
 <span id="cb34-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb34-3"><a aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> np.random.exponential(scale<span class="op">=</span><span class="dv">2</span>, size<span class="op">=</span><span class="dv">10000</span>)</span>
@@ -1038,7 +1038,7 @@ Note: Even though population is skewed, sampling distribution is normal!</code><
 </section>
 <section id="computing-standard-error" class="slide level2">
 <h2>Computing Standard Error</h2>
-<div id="711255bb" class="cell" data-execution_count="28">
+<div id="7d380363" class="cell" data-execution_count="28">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Generate sample</span></span>
 <span id="cb36-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb36-3"><a aria-hidden="true" tabindex="-1"></a>sample <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">15</span>, <span class="dv">50</span>)</span>
@@ -1086,7 +1086,7 @@ Square-root of n rule:
 </section>
 <section id="bootstrap-implementation" class="slide level2">
 <h2>Bootstrap Implementation</h2>
-<div id="9e0a00ff" class="cell" data-fig-height="3.5" data-execution_count="29">
+<div id="0618904b" class="cell" data-fig-height="3.5" data-execution_count="29">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Original sample</span></span>
 <span id="cb38-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb38-3"><a aria-hidden="true" tabindex="-1"></a>original_sample <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">15</span>, <span class="dv">50</span>)</span>
@@ -1140,7 +1140,7 @@ Formula SE: 1.98</code></pre>
 </section>
 <section id="computing-confidence-intervals" class="slide level2">
 <h2>Computing Confidence Intervals</h2>
-<div id="dd0e2361" class="cell" data-execution_count="30">
+<div id="3cbc0366" class="cell" data-execution_count="30">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Use bootstrap distribution from previous slide</span></span>
 <span id="cb40-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb40-3"><a aria-hidden="true" tabindex="-1"></a>original_sample <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">15</span>, <span class="dv">50</span>)</span>
@@ -1185,7 +1185,7 @@ Note: Higher confidence → wider interval</code></pre>
 </section>
 <section id="normal-distribution" class="slide level2">
 <h2>Normal Distribution</h2>
-<div id="5ed44e14" class="cell" data-fig-height="3.5" data-execution_count="31">
+<div id="76167ed2" class="cell" data-fig-height="3.5" data-execution_count="31">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Normal PDF function</span></span>
 <span id="cb42-2"><a aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> normal_pdf(x, mu<span class="op">=</span><span class="dv">0</span>, sigma<span class="op">=</span><span class="dv">1</span>):</span>
 <span id="cb42-3"><a aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Calculate normal probability density function"""</span></span>
@@ -1231,7 +1231,7 @@ Note: Higher confidence → wider interval</code></pre>
 </section>
 <section id="q-q-plots" class="slide level2">
 <h2>Q-Q Plots</h2>
-<div id="18b92761" class="cell" data-fig-height="3.5" data-execution_count="32">
+<div id="61f07367" class="cell" data-fig-height="3.5" data-execution_count="32">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> qq_plot(data, ax, title):</span>
 <span id="cb44-2"><a aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Create Q-Q plot manually"""</span></span>
 <span id="cb44-3"><a aria-hidden="true" tabindex="-1"></a>    standardized <span class="op">=</span> (data <span class="op">-</span> np.mean(data)) <span class="op">/</span> np.std(data, ddof<span class="op">=</span><span class="dv">1</span>)</span>
@@ -1282,7 +1282,7 @@ Note: Higher confidence → wider interval</code></pre>
 </section>
 <section id="binomial-distribution-in-python" class="slide level2">
 <h2>Binomial Distribution in Python</h2>
-<div id="55ef99de" class="cell" data-fig-height="3.5" data-execution_count="33">
+<div id="5c2c1b77" class="cell" data-fig-height="3.5" data-execution_count="33">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> binomial_pmf(k, n, p):</span>
 <span id="cb46-2"><a aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Calculate binomial probability mass function"""</span></span>
 <span id="cb46-3"><a aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> factorial(x):</span>
@@ -1334,7 +1334,7 @@ Expected value (mean) = n×p = 6.0</code></pre>
 </section>
 <section id="poisson-distribution-in-python" class="slide level2">
 <h2>Poisson Distribution in Python</h2>
-<div id="c4147476" class="cell" data-fig-height="3.5" data-execution_count="34">
+<div id="3915e9ad" class="cell" data-fig-height="3.5" data-execution_count="34">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb48-2"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb48-3"><a aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> poisson_pmf(k, lam):</span>
@@ -1388,7 +1388,7 @@ Use for: arrivals, calls, defects per time/space unit</code></pre>
 </section>
 <section id="exponential-distribution-in-python" class="slide level2">
 <h2>Exponential Distribution in Python</h2>
-<div id="804f87c9" class="cell" data-fig-height="3.5" data-execution_count="35">
+<div id="cf097302" class="cell" data-fig-height="3.5" data-execution_count="35">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb50-1"><a aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> exponential_pdf(x, lam):</span>
 <span id="cb50-2"><a aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Calculate exponential probability density function"""</span></span>
 <span id="cb50-3"><a aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> lam <span class="op">*</span> np.exp(<span class="op">-</span>lam <span class="op">*</span> x)</span>
@@ -1468,7 +1468,7 @@ Example: time between customer arrivals</code></pre>
 </section>
 <section id="complete-example" class="slide level2">
 <h2>Complete Example</h2>
-<div id="15aa6649" class="cell" data-execution_count="36">
+<div id="b7e5d359" class="cell" data-execution_count="36">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb52-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># Comprehensive analysis example</span></span>
 <span id="cb52-2"><a aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
 <span id="cb52-3"><a aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.normal(<span class="dv">100</span>, <span class="dv">15</span>, <span class="dv">200</span>)</span>
@@ -1509,7 +1509,7 @@ CI Width: 4.00</code></pre>
 </section>
 <section id="complete-example-continued" class="slide level2">
 <h2>Complete Example (continued)</h2>
-<div id="d0e4903f" class="cell" data-fig-height="4" data-execution_count="37">
+<div id="531d520b" class="cell" data-fig-height="4" data-execution_count="37">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb54-1"><a aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Comprehensive visualization</span></span>
 <span id="cb54-2"><a aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">8</span>))</span>
 <span id="cb54-3"><a aria-hidden="true" tabindex="-1"></a></span>
