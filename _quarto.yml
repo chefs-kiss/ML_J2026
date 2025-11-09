@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Machine Learning"
+  search:
+    type: textbox
   sidebar:
     background: primary
     # logo: "images/logo.png"
@@ -13,6 +15,12 @@ website:
       - icon: github
         href: https://github.com/chefs-kiss/ML_J2026
         text: GitHub
+      - icon: file-earmark-pdf
+        href: https://chefs-kiss.github.io/ML_J2026/files/ISLP.pdf
+        text: ISLP
+      - icon: chat-heart
+        href: https://mdl.stolaf.edu/course/view.php?id=56310
+        text: Moodle
     style: docked
     contents:
     - section: "Course Information"
@@ -27,8 +35,10 @@ website:
       contents:
         - href: homework.qmd
           text: Homework
+          icon: file-earmark-text
         - href: labs.qmd
           text: Labs
+          icon: journal-code
         - href: project.qmd
           text: Project
         - href: slides.qmd
