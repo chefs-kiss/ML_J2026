@@ -9,6 +9,10 @@
 
  - [ ] [ggplot vs plotnine](https://blog.tidy-intelligence.com/posts/ggplot2-vs-plotnine/) compares the graphing power of R's ggplot to Python's plotnine (R wrapper for ggplot). Useful for those who have experience with creating visualizations in R, or for those who are unimpressed by matplotlib's capabilities. Only read if you have a background using R. 
 
+ - [ ] [Practical Statistics for Data Science](../files/Stats4ML.pdf) walks through basic definitions of statistical measures, charts, and distributions. If you need a more concrete background in statistics, read through this text.
+
+ - [ ] [Statistics for ML](stats_resource.qmd)
+
 
 ## Cheat sheets
 The following cheatsheets may be helpful for your reference: [data storytelling](../files/data_storytelling.pdf), [data visualizations](../files/data_visualizations.pdf.pdf), [matplotlib](../files/matplotlib.pdf.pdf), [plotly](../files/plotly.pdf.pdf), [seaborn](../files/seaborn.pdf.pdf). <br>
