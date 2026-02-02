@@ -1,0 +1,9 @@
+# EDA module
+
+[Slides](slides-EDA.qmd)
+
+[Readings](rr-EDA.qmd)
+
+[Homework](hw-EDA.qmd)
+
+[Lab](../labs.qmd#lab-eda)
