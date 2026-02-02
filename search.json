@@ -339,116 +339,11 @@
     "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
   },
   {
-    "objectID": "06-LIN/rr-LIN.html",
-    "href": "06-LIN/rr-LIN.html",
-    "title": "LIN readings",
+    "objectID": "01-EDA/slides-EDA.html",
+    "href": "01-EDA/slides-EDA.html",
+    "title": "EDA1",
     "section": "",
-    "text": "Dive deeper in the content we’ll be covering. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nOverview chapter 3 \nSimple Linear Regression section 3.1 \nMultiple Linear Regression section 3.2 \nConsiderations section 3.3"
-  },
-  {
-    "objectID": "06-LIN/rr-LIN.html#islp-selected-readings",
-    "href": "06-LIN/rr-LIN.html#islp-selected-readings",
-    "title": "LIN readings",
-    "section": "",
-    "text": "Dive deeper in the content we’ll be covering. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nOverview chapter 3 \nSimple Linear Regression section 3.1 \nMultiple Linear Regression section 3.2 \nConsiderations section 3.3"
-  },
-  {
-    "objectID": "06-LIN/std-LIN.html",
-    "href": "06-LIN/std-LIN.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "The following standards will be assessed on the LIN quiz:"
-  },
-  {
-    "objectID": "06-LIN/std-LIN.html#alg-lin",
-    "href": "06-LIN/std-LIN.html#alg-lin",
-    "title": "Machine Learning",
-    "section": "ALG-LIN",
-    "text": "ALG-LIN\nYou should be able to:\n\nExplain the process of the linear regression algorithm\nDefine the following terms: objective function, cost function, gradient descent, learning rate\nInterpret gradients and give suggestions for possible model improvement"
-  },
-  {
-    "objectID": "06-LIN/std-LIN.html#flow-lin",
-    "href": "06-LIN/std-LIN.html#flow-lin",
-    "title": "Machine Learning",
-    "section": "FLOW-LIN",
-    "text": "FLOW-LIN\nYou should be able to:\n\nAnalyze and critique a given five-step workflow using linear models"
-  },
-  {
-    "objectID": "06-LIN/std-LIN.html#study-tips",
-    "href": "06-LIN/std-LIN.html#study-tips",
-    "title": "Machine Learning",
-    "section": "Study Tips",
-    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
-  },
-  {
-    "objectID": "06-LIN/std-LIN.html#formulas-given",
-    "href": "06-LIN/std-LIN.html#formulas-given",
-    "title": "Machine Learning",
-    "section": "Formulas Given",
-    "text": "Formulas Given\n\\(\\text{MAE}: \\frac{1}{n}\\Sigma |y_{obs} - y_{pred}|\\) \\(\\text{MSE}: \\frac{1}{n}\\Sigma (y_{obs} - y_{pred})^2\\) \\(\\text{RMSE}: \\sqrt{\\text{MSE}}\\) \\(y_{pred}=\\beta_1 x_1+\\beta_0\\) \\(\\nabla C(x,y) = (\\frac{\\delta C}{\\delta y}(x,y), \\frac{\\delta C}{\\delta x}(x,y)\\) \\((\\beta_0*, \\beta_1* ) = (\\beta_0, \\beta_1) + l \\times(-\\nabla C(\\beta_0, \\beta_1))\\)"
-  },
-  {
-    "objectID": "03-CLS/rr-CLS.html",
-    "href": "03-CLS/rr-CLS.html",
-    "title": "CLS readings",
-    "section": "",
-    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4\n\n\n\n\n\nDecision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
-  },
-  {
-    "objectID": "03-CLS/rr-CLS.html#islp-selected-readings",
-    "href": "03-CLS/rr-CLS.html#islp-selected-readings",
-    "title": "CLS readings",
-    "section": "",
-    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4"
-  },
-  {
-    "objectID": "03-CLS/rr-CLS.html#related-articles",
-    "href": "03-CLS/rr-CLS.html#related-articles",
-    "title": "CLS readings",
-    "section": "",
-    "text": "Decision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
-  },
-  {
-    "objectID": "03-CLS/hw-CLS.html",
-    "href": "03-CLS/hw-CLS.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "For the following calculations, you can reuse the functions you build in your in-class workbooks."
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html",
-    "href": "03-CLS/std-CLS.html",
-    "title": "Machine Learning",
-    "section": "",
-    "text": "The following standards will be assessed on the CLS quiz:"
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#alg-cls",
-    "href": "03-CLS/std-CLS.html#alg-cls",
-    "title": "Machine Learning",
-    "section": "ALG-CLS",
-    "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms\nDefine intra vs inter cluster distances and it’s relevance to the k-means clustering algorithm"
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#evl-cls",
-    "href": "03-CLS/std-CLS.html#evl-cls",
-    "title": "Machine Learning",
-    "section": "EVL-CLS",
-    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nIdentify good choices for cluster size \\(k\\)"
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#study-tips",
-    "href": "03-CLS/std-CLS.html#study-tips",
-    "title": "Machine Learning",
-    "section": "Study Tips",
-    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
-  },
-  {
-    "objectID": "03-CLS/std-CLS.html#formulas-given",
-    "href": "03-CLS/std-CLS.html#formulas-given",
-    "title": "Machine Learning",
-    "section": "Formulas given",
-    "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
+    "text": "EDA1\n\n\n\n\nEDA2\n\n\n\n\nEDA3"
   },
   {
     "objectID": "01-EDA/stats_resource.html#setup",
@@ -778,6 +673,118 @@
     "title": "Statistics for Machine Learning",
     "section": "Thank You!",
     "text": "Thank You!\nQuestions?\nRemember:\n\nStart with exploration\nQuantify uncertainty\nUse appropriate methods\nVisualize your results"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html",
+    "href": "03-CLS/std-CLS.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "The following standards will be assessed on the CLS quiz:"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#alg-cls",
+    "href": "03-CLS/std-CLS.html#alg-cls",
+    "title": "Machine Learning",
+    "section": "ALG-CLS",
+    "text": "ALG-CLS\nYou should be able to:\n\nDefine the unsupervised learning approach and identify it’s associated algorithms\nExplain these algorithms and their associated terms to a non-technical audience\nIdentify when to use various unsupervised algorithms\nDefine intra vs inter cluster distances and it’s relevance to the k-means clustering algorithm"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#evl-cls",
+    "href": "03-CLS/std-CLS.html#evl-cls",
+    "title": "Machine Learning",
+    "section": "EVL-CLS",
+    "text": "EVL-CLS\nYou should be able to:\n\nInterpret clustering results and identify which clusters are related to ground truths\nCalculate and interpret silhouette coefficients\nIdentify good choices for cluster size \\(k\\)"
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#study-tips",
+    "href": "03-CLS/std-CLS.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "03-CLS/std-CLS.html#formulas-given",
+    "href": "03-CLS/std-CLS.html#formulas-given",
+    "title": "Machine Learning",
+    "section": "Formulas given",
+    "text": "Formulas given\n\\(\\text{Silhouette coefficient} = \\frac{b-a}{max(a,b)}\\) \\(\\text{Euclidean distance} = \\sqrt{(x_2 - x_1)^2+ (y_2 - y_1)^2}\\)"
+  },
+  {
+    "objectID": "03-CLS/hw-CLS.html",
+    "href": "03-CLS/hw-CLS.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "For the following calculations, you can reuse the functions you build in your in-class workbooks."
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html",
+    "href": "03-CLS/rr-CLS.html",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4\n\n\n\n\n\nDecision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html#islp-selected-readings",
+    "href": "03-CLS/rr-CLS.html#islp-selected-readings",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. These articles can be quite math-heavy. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nUnsupervised Learning section 12.1 \nPCA section 12.2 \nClustering Models section 12.4"
+  },
+  {
+    "objectID": "03-CLS/rr-CLS.html#related-articles",
+    "href": "03-CLS/rr-CLS.html#related-articles",
+    "title": "CLS readings",
+    "section": "",
+    "text": "Decision making with AI (few years old) gives real-world examples of the ethical dilemmas of ML \nRecommender system tutorial(won’t cover in class but interesting unsupervised learning model) which you can get a better idea of how it works by writing out the 5-step ML workflow and fill in the steps you see being taken in the tutorial."
+  },
+  {
+    "objectID": "06-LIN/std-LIN.html",
+    "href": "06-LIN/std-LIN.html",
+    "title": "Machine Learning",
+    "section": "",
+    "text": "The following standards will be assessed on the LIN quiz:"
+  },
+  {
+    "objectID": "06-LIN/std-LIN.html#alg-lin",
+    "href": "06-LIN/std-LIN.html#alg-lin",
+    "title": "Machine Learning",
+    "section": "ALG-LIN",
+    "text": "ALG-LIN\nYou should be able to:\n\nExplain the process of the linear regression algorithm\nDefine the following terms: objective function, cost function, gradient descent, learning rate\nInterpret gradients and give suggestions for possible model improvement"
+  },
+  {
+    "objectID": "06-LIN/std-LIN.html#flow-lin",
+    "href": "06-LIN/std-LIN.html#flow-lin",
+    "title": "Machine Learning",
+    "section": "FLOW-LIN",
+    "text": "FLOW-LIN\nYou should be able to:\n\nAnalyze and critique a given five-step workflow using linear models"
+  },
+  {
+    "objectID": "06-LIN/std-LIN.html#study-tips",
+    "href": "06-LIN/std-LIN.html#study-tips",
+    "title": "Machine Learning",
+    "section": "Study Tips",
+    "text": "Study Tips\nReview the lecture slides, workbooks, homework assignments, and the associated lab.\nQuiz questions are similar (though not identical) to the types of questions covered in these materials. You should be able to use appropriate terminology and apply the concepts covered in class to a variety of new scenarios.\nThe primary goal of each quiz is to give you an opportunity to apply concepts with clear and well-explained reasoning.\nQuizzes are also a valuable opportunity to receive feedback on your reasoning skills."
+  },
+  {
+    "objectID": "06-LIN/std-LIN.html#formulas-given",
+    "href": "06-LIN/std-LIN.html#formulas-given",
+    "title": "Machine Learning",
+    "section": "Formulas Given",
+    "text": "Formulas Given\n\\(\\text{MAE}: \\frac{1}{n}\\Sigma |y_{obs} - y_{pred}|\\) \\(\\text{MSE}: \\frac{1}{n}\\Sigma (y_{obs} - y_{pred})^2\\) \\(\\text{RMSE}: \\sqrt{\\text{MSE}}\\) \\(y_{pred}=\\beta_1 x_1+\\beta_0\\) \\(\\nabla C(x,y) = (\\frac{\\delta C}{\\delta y}(x,y), \\frac{\\delta C}{\\delta x}(x,y)\\) \\((\\beta_0*, \\beta_1* ) = (\\beta_0, \\beta_1) + l \\times(-\\nabla C(\\beta_0, \\beta_1))\\)"
+  },
+  {
+    "objectID": "06-LIN/rr-LIN.html",
+    "href": "06-LIN/rr-LIN.html",
+    "title": "LIN readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nOverview chapter 3 \nSimple Linear Regression section 3.1 \nMultiple Linear Regression section 3.2 \nConsiderations section 3.3"
+  },
+  {
+    "objectID": "06-LIN/rr-LIN.html#islp-selected-readings",
+    "href": "06-LIN/rr-LIN.html#islp-selected-readings",
+    "title": "LIN readings",
+    "section": "",
+    "text": "Dive deeper in the content we’ll be covering. If anything is unclear, don’t hesitate to reach out to your instructor. Aim to grasp the big-picture ideas so you can explain each topic to a non-technical audience. \n\nOverview chapter 3 \nSimple Linear Regression section 3.1 \nMultiple Linear Regression section 3.2 \nConsiderations section 3.3"
   },
   {
     "objectID": "01-EDA/rr-EDA.html",
